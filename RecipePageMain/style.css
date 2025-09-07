@@ -14,8 +14,8 @@
     --card-radius: 25px;
     --section-radius: 15px;
 
-    --young-serif: "Young Serif", sans-serif;
-    --outfit: "Outfit", sans-serif;
+    --young-serif: "Young Serif", sans;
+    --outfit: "Outfit", sans-serif  ;
     --paragraph-text: 16px;
 }
 
@@ -41,18 +41,18 @@ body {
 .card {
     background-color: var(--white);
     width: 50vw;
-    margin-top: 130px;
-    padding: 40px;
+    margin-top: 100px;
     border-radius: var(--card-radius);
+    padding: 40px;
 }
 
-.figure {
+.card-image {
     width: 100%;
     overflow: hidden;
     height: 300px;
 }
 
-.figure img {
+.card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -74,7 +74,7 @@ li {
     font-size: 17px;
 }
 
-#prep-time {
+.prep-time {
     background-color: var(--rose-50);
     margin: 30px 2px;
     padding: 20px 20px 15px 30px;
@@ -82,7 +82,7 @@ li {
     font-family: var(--outfit);
 }
 
-#prep-time h3 {
+.prep-time h3 {
     color: var(--rose-800);
 }
 
@@ -106,28 +106,28 @@ li::marker {
     color: var(--brown-800);
 }
 
-#prep-time li::marker {
+.prep-time li::marker {
     color: var(--rose-800);
 }
 
 
-#ingredients {
+.ingredients {
     margin-bottom: 35px;
 }
 
-#instructions {
+.instructions {
     margin: 25px 0 35px;
 }
 
-#instructions h2 {
+.instructions h2 {
     margin-bottom: 15px;
 }
 
-#instructions li {
+.instructions li {
     margin-left: 25px;
 }
 
-#instructions li::marker {
+.instructions li::marker {
     font-family: var(--outfit);
     font-weight: 600;
 }
@@ -136,26 +136,39 @@ hr {
     color: var(--stone-100);
 }
 
-#nutrition {
+.nutrition {
     margin-top: 25px;
 }
 
-#nutrition h2 {
+.nutrition h2 {
     margin-bottom: 15px;
 }
 
-#nutrition p {
+.nutrition p {
     margin-bottom: 25px;
 }
 
 table {
     margin: 10px 0;
     width: 100%;
-    margin-left: 30px;
+    border-collapse: collapse;
+}
+
+tr {
+    margin: 20px 0;
+    border-bottom: 1px solid var(--stone-150);
+}
+
+tr, td {
+    padding: 10px 0;
 }
 
 td {
     width: 10%;
+}
+
+td:first-child {
+    text-indent: 8%;
 }
 
 td:last-child {
@@ -163,8 +176,12 @@ td:last-child {
     font-weight: bold;
 }
 
+tr:last-child {
+    border-bottom: none;
+}
+
 .attribution {
-    margin: 5px 0 130px 0;
+    margin: 5px 0 100px 0;
 }
 
 .attribution a {
@@ -183,14 +200,14 @@ td:last-child {
         border-radius: 0;
     }
 
-    .figure {
+    .card-image {
         width: calc(100% + 80px);
         margin-left: -40px;
         margin-top: -40px;
         height: auto;
     }
 
-    .figure img {
+    .card-image img {
         width: 100%;
         height: auto;
         object-fit: cover;
