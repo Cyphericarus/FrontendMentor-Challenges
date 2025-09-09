@@ -1,0 +1,163 @@
+:root {
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+    --fraunces: "Fraunces", serif;
+
+    --radius-corner: 10px;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+html {
+    font-size: 14px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: var(--cream);
+}
+
+.product-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    max-width: 700px;
+    width: 90%;
+    justify-content: stretch;
+    overflow: hidden;
+
+    background-color: var(--white);
+    border-radius: var(--radius-corner);
+}
+
+.product-image {
+    overflow: hidden;
+    background: url(images/image-product-desktop.jpg) no-repeat center/cover;
+    filter: contrast(1.1) brightness(0.9);
+}
+
+.product-details {
+    padding: 2.5rem;
+}
+
+.product-details h1 {
+    font-family: var(--fraunces);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--green-700);
+    line-height: 2.5rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.product-type-text {
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.product-para {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.prices {
+    margin: 1.7rem 0;
+    display: flex;
+}
+
+.price-discount {
+    font-family: var(--fraunces);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--green-500);
+}
+
+.price-original {
+    padding: 1rem;
+    text-decoration: line-through;
+}
+
+.button-add-to-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.8rem;
+    margin: 0.4rem 0;
+    background-color: var(--green-500);
+    border-radius: var(--radius-corner);
+    border: 0.1rem solid var(--green-500);
+    text-decoration: none;
+}
+
+.button-add-to-card img {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 1rem;
+}
+
+.button-add-to-card p {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.button-add-to-card:hover,
+.button-add-to-card:focus-visible {
+    background-color: var(--green-700);
+    border: 0.1rem solid var(--green-700);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+}
+
+.attribution a {
+    color: var(--green-500);
+}
+
+@media (max-width: 768px) {
+    .main {
+        display: flex;
+        height: auto;
+        width: 100vw;
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        margin: 5rem 1rem 0 1rem;
+    }
+
+    .attribution {
+        margin-bottom: 5rem;
+    }
+
+    .product-image {
+        background: url(images/image-product-mobile.jpg) no-repeat center/cover;
+        aspect-ratio: 1/1;
+    }
+}
