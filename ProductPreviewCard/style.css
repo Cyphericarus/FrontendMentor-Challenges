@@ -39,7 +39,7 @@ html {
 .product-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 650px;
+    max-width: 600px;
     width: 90%;
     justify-content: stretch;
     overflow: hidden;
@@ -55,15 +55,15 @@ html {
 }
 
 .product-details {
-    padding: 2.5rem;
+    padding: 1.4rem 1.7rem;
 }
 
 .product-details h1 {
     font-family: var(--fraunces);
     font-weight: 700;
-    font-size: 2.5rem;
-    color: var(--green-700);
-    line-height: 2.5rem;
+    font-size: 2.4rem;
+    color: var(--black);
+    line-height: 2.3rem;
     margin: 1.5rem 0 2rem 0;
 }
 
@@ -85,7 +85,7 @@ html {
 
 .price-discount {
     font-family: var(--fraunces);
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 700;
     color: var(--green-500);
 }
@@ -100,7 +100,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3.8rem;
+    height: 3.5rem;
     margin: 0.4rem 0;
     background-color: var(--green-500);
     border-radius: var(--radius-corner);
