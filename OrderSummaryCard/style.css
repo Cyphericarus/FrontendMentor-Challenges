@@ -22,7 +22,23 @@ body {
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     min-width: 768px;
-    background-size: cover;
+    background-size:contain;
     background-color: var(--blue-100);
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.summary-card {
+    width: 500px;
+    max-width: 90%;
+    background-color: var(--blue-50);
+    display: grid;
+
+}
