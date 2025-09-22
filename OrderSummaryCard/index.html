@@ -26,29 +26,31 @@
                 <img src="images/illustration-hero.svg" alt="Person dancing with headphones and phone, enjoying music">
             </picture>
 
-            <!-- main heading -->
-            <h1 class="card__heading">Order Summary</h1>
+            <div class="card__summary">
+                <!-- main heading -->
+                <h1 class="card__heading">Order Summary</h1>
 
-            <!-- description -->
-            <p class="card__description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+                <!-- description -->
+                <p class="card__description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 
-            <!-- plan details -->
-            <div class="plan__container">
-                <img src="images/icon-music.svg" alt="">
-                <dl class="plan__details">
-                    <dt>Annual Plan</dt>
-                    <dd><data value=59.09>$59.99/year</data></dd>
-                    <!-- <data> tag above is useful while sorting or filtering 
-                        Syntax: <data value="machine-readable-value">Human-readable text</data>  --> 
-                </dl>
-                <a href="#" class="plan__change-link">Change</a>
+                <!-- plan details -->
+                <div class="plan__container">
+                    <img src="images/icon-music.svg" alt="">
+                    <dl class="plan__details">
+                        <dt>Annual Plan</dt>
+                        <dd><data value=59.09>$59.99/year</data></dd>
+                        <!-- <data> tag above is useful while sorting or filtering 
+                            Syntax: <data value="machine-readable-value">Human-readable text</data>  --> 
+                    </dl>
+                    <a href="#" class="plan__change-link">Change</a>
+                </div>
+
+                <!-- proceed to payment button-->
+                <button type="button" class="payment-button">Proceed to Payment</button>
+
+                <!-- cancel order button -->
+                <button type="button" class="cancel-button">Cancel Order</button> <!-- Use <button> whenever an element triggers an action, even if it’s styled to look like plain text. -->
             </div>
-
-            <!-- proceed to payment button-->
-            <button type="button" class="payment-button">Proceed to Payment</button>
-
-            <!-- cancel order button -->
-            <button type="button" class="cancel-button">Cancel Order</button> <!-- Use <button> whenever an element triggers an action, even if it’s styled to look like plain text. -->
         </article>
 
         <div class="attribution">

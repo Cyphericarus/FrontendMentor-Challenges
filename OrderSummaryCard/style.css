@@ -34,11 +34,104 @@ body {
     height: 100vh;
 }
 
-
 .summary-card {
-    width: 500px;
+    width: 400px;
     max-width: 90%;
-    background-color: var(--blue-50);
-    display: grid;
+    background-color: white;
 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    overflow:hidden;
+    border-radius: 1rem;
+
+    box-shadow: 1px 1px 10px 0px var(--blue-100) ;
 }
+
+.card__summary {
+    padding: 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__heading {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--blue-950);
+    padding: 1rem;
+}
+
+.card__description {
+    text-align: center;
+    color: var(--gray-600);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.plan__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1.5rem;
+
+    margin: 1rem;
+    height: 5rem;
+    width: 100%;
+    background-color: var(--blue-50);
+    border-radius: 0.6rem;
+}
+
+.plan__details {
+    line-height: 1.5rem;
+}
+
+.plan__details dt{
+    font-weight: 700;
+    color: var(--blue-950);
+}
+
+.plan__details dd{
+    font-weight: 500;   
+    color: var(--gray-600);
+}
+
+.plan__change-link {
+    padding-left: 3rem;
+    color: var(--blue-700);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.payment-button {
+    background-color: var(--blue-700);
+    color: white;
+
+    width: 100%;
+    height: 3rem;
+
+    border-radius: 0.6rem;
+    border: none;
+    box-shadow: 0 1.5rem  1rem 0 var(--blue-100);
+
+    font-weight: 700;
+
+    margin: 1rem 0;
+}
+
+.cancel-button {
+    font-weight: 700;
+    color: var(--gray-600);
+    background-color: inherit;
+    border: none;
+    margin: 0.8rem 0;
+}
+
+
+.attribution {
+    color: var(--gray-600);
+}
+
+
