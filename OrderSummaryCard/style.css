@@ -22,7 +22,7 @@ body {
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     min-width: 768px;
-    background-size:contain;
+    background-size: contain;
     background-color: var(--blue-100);
 }
 
@@ -40,14 +40,14 @@ body {
     background-color: white;
 
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    overflow:hidden;
+    overflow: hidden;
     border-radius: 1rem;
 
-    box-shadow: 1px 1px 10px 0px var(--blue-100) ;
+    box-shadow: 1px 1px 10px 0px var(--blue-100);
 }
 
 .card__summary {
@@ -88,13 +88,13 @@ body {
     line-height: 1.5rem;
 }
 
-.plan__details dt{
+.plan__details dt {
     font-weight: 700;
     color: var(--blue-950);
 }
 
-.plan__details dd{
-    font-weight: 500;   
+.plan__details dd {
+    font-weight: 500;
     color: var(--gray-600);
 }
 
@@ -105,6 +105,11 @@ body {
     font-size: 0.9rem;
 }
 
+.plan__change-link:hover {
+    text-decoration: none;
+    color: rgb(109, 109, 218);
+}
+
 .payment-button {
     background-color: var(--blue-700);
     color: white;
@@ -112,9 +117,14 @@ body {
     height: 3rem;
     border-radius: 0.6rem;
     border: none;
-    box-shadow: 0 1.5rem  1rem 0 var(--blue-100);
+    box-shadow: 0 1.5rem 1rem 0 var(--blue-100);
     font-weight: 700;
     margin: 1rem 0;
+}
+
+.payment-button:hover {
+    background-color: rgb(109, 109, 218);
+    cursor: pointer;
 }
 
 .cancel-button {
@@ -125,12 +135,16 @@ body {
     margin: 0.8rem 0;
 }
 
+.cancel-button:hover {
+    cursor: pointer;
+    color: black;
+}
 
 .attribution {
     color: var(--gray-600);
     font-size: 0.8rem;
 }
 
-.attribution a{
+.attribution a {
     font-size: 0.8rem;
 }
