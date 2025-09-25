@@ -90,9 +90,9 @@ The focus was on **semantic HTML**, **modern CSS practices**, and **accessibilit
 
 * **Google Fonts**:
 
-  * [Fraunces](https://fonts.google.com/specimen/Fraunces)
+  * [Fraunces](https://fonts.google.com/specimen/Fraunces)
 
-  * [Montserrat](https://fonts.google.com/specimen/Montserrat)
+  * [Montserrat](https://fonts.google.com/specimen/Montserrat)
 
 ---
 
@@ -108,4 +108,4 @@ Coded by [**CypherIcarus**](https://github.com/Cyphericarus).
 
 Contributions, issues, and suggestions are always welcome!
 
-Feel free to fork this repo and submit a PR with improvements. 😊
+Feel free to fork this repo and submit a PR with improvements. 😊 
