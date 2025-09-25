@@ -10,7 +10,7 @@ It showcases a product image along with product details like type, name, descrip
 
 ## 📑 Table of Contents
 
-* [Overview](#overview)
+* [Overview](#-overview)
 
 * [Features](#features)
 
