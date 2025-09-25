@@ -12,7 +12,8 @@
 
 html {
     font-family: "Outfit", sans-serif;
-    font-size: 18px;                
+    font-size: 18px;
+    color: var(--blue-500);                
 }
 
 * {
@@ -28,24 +29,129 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items:center;
+
     height: 100vh;
 }
 
 .preview-card {
-    max-width: 20rem;
+    max-width: 19rem;
     width: 100%;
 
     background-color: var(--blue-900);
 
+    padding: 1.3rem;
 
+    border-radius: 0.8rem;
+
+    box-shadow: 0 0.8rem 0.7rem 0.5rem rgb(18, 16, 49);
 }
 
 .preview-card__image {
     width: 100%;
     height: 100%;
-    
+
+    border-radius: 0.5rem;
 }
 
+.preview-card__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    margin: 1rem 0;
+}  
+
+.preview-card__title a {
+    color: var(--white);
+    text-decoration: none;
+}  
+
+
+.preview-card__title a:hover,
+.preview-card__title a:focus {
+    color: var(--cyan-400);
+}
+
+.preview-card__description {
+    font-weight: 300;
+}
+
+.preview-card__info,
+.preview-card__price,
+.preview-card__expiry {
+    display: flex;
+    font-size: 0.85rem;
+}
+
+.preview-card__info {
+    margin-top: 1.5rem;
+    justify-content: space-between;
+}
+
+.preview-card__price,
+.preview-card__expiry{
+    gap: 0.5rem;
+}
+
+.preview-card__price {
+    color: var(--cyan-400);
+}
+
+.preview-card__expiry{
+    font-weight: 300;
+}
+
+.preview-card__line {
+    border: 0;
+    height: 0.08rem;
+    background-color: var(--blue-800);
+
+    margin: 1.2rem 0 0.9rem;
+}
+
+.preview-card__author {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.preview-card__author-image {
+    border: 0.1rem solid var(--white);
+    border-radius: 50%;
+
+    max-height: 2rem;
+    max-width: 2rem;
+}
+
+.preview-card__author-name {
+    font-size: 0.9rem;
+}
+
+.preview-card__author-name a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.preview-card__author-name a:hover,
+.preview-card__author-name a:focus {
+    color: var(--cyan-400);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+
+    font-size: 0.7rem;
+}
+
+.attribution a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    color: var(--cyan-400);
+}
 
 
 
