@@ -43,7 +43,7 @@ body {
 
     border-radius: 0.8rem;
 
-    box-shadow: 0 0.8rem 0.7rem 0.5rem rgb(18, 16, 49);
+    box-shadow: 0 0.8rem 0.7rem 0.5rem rgb(15, 18, 41);
 }
 
 .preview-card__image {
@@ -139,6 +139,7 @@ body {
 .attribution {
     position: fixed;
     bottom: 0;
+    margin-bottom: 1rem;
 
     font-size: 0.7rem;
 }
