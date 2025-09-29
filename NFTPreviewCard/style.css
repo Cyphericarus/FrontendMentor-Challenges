@@ -163,28 +163,6 @@ body {
 
 
 @media (max-width: 768px) {
-    .preview-card__image {
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: opacity 0.3s ease;
-    }
-   
-    .attribution {
-    position: fixed;
-    bottom: 0;
-    margin-bottom: 1rem;
-
-    font-size: 0.7rem;
-    }
-    
-    .preview-card__author {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-
-
-}
     
 }
 
