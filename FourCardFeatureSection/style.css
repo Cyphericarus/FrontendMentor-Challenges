@@ -51,11 +51,101 @@ body {
     margin: 1rem
 }
 
-.feature-card--wrapper {
+/* 
+.feature--wrapper {
     display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    place-items: center;
 }
 
+
+
+@media (min-width: 900px) {
+    .feature--wrapper {
+        grid-template-areas:
+            "supervisor team calculator"
+            ". karma .";
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */
+
+
+/* Grid container only */
+.features {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+/* Desktop: 3-column layout with a second row for the centered lower card */
+@media (min-width: 900px) {
+    .features {
+        grid-template-columns: repeat(3, minmax(260px, 1fr));
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "supervisor team calculator"
+            ".        karma  .";
+        align-items: start;
+        /* top-align row 1 */
+        gap: 3rem 2.5rem;
+        padding-top: 4rem;
+    }
+
+    /* map each card to an area by adding these modifier classes to your card elements */
+    .feature--supervisor {
+        grid-area: supervisor;
+    }
+
+    .feature--team {
+        grid-area: team;
+    }
+
+    .feature--calculator {
+        grid-area: calculator;
+    }
+
+    .feature--karma {
+        grid-area: karma;
+    }
+
+    /* visual vertical offsets to match the reference layout */
+    .feature--team {
+        transform: translateY(-28px);
+        /* raise center top card */
+    }
+
+    .feature--karma {
+        transform: translateY(28px);
+        /* lower center bottom card slightly */
+    }
+
+    .feature--supervisor {
+        transform: translateY(8rem);
+        /* lower center bottom card slightly */
+    }
+
+    .feature--calculator {
+        transform: translateY(8rem);
+        /* lower center bottom card slightly */
+    }
+}
+
+/* small tweak: keep center alignment for items inside grid cells */
+.features>* {
+    width: 100%;
+    max-width: 340px;
+    /* prevents cards from growing too wide inside each column */
+    display: block;
+}
 
 
 
