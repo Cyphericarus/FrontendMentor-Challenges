@@ -51,29 +51,6 @@ body {
     margin: 1rem
 }
 
-/* 
-.feature--wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
-    place-items: center;
-}
-
-
-
-@media (min-width: 900px) {
-    .feature--wrapper {
-        grid-template-areas:
-            "supervisor team calculator"
-            ". karma .";
-        grid-template-columns: repeat(3, 1fr);
-    }
-} */
-
-
 /* Grid container only */
 .features {
     width: 100%;
