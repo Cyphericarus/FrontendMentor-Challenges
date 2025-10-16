@@ -51,14 +51,9 @@ body {
     margin: 1rem
 }
 
-.features {
-    
-}
 
 
-
-
-
+/* 
 aside {
     position: fixed;
     bottom: 0;
@@ -75,4 +70,4 @@ aside a {
 
 aside a:hover {
     color: var(--blue);
-} 
+}  */
