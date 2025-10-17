@@ -62,7 +62,7 @@ The focus was on **semantic HTML**, **modern CSS practices**, and **accessibilit
 * **HTML5**  
 * **CSS3** (Flexbox, hover effects, Media Queries)  
 * **Google Fonts**:  
-  - [Outfit](https://fonts.google.com/specimen/Inter)
+  - [Inter](https://fonts.google.com/specimen/Inter)
 
 ---
 
