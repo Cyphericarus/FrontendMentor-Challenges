@@ -33,16 +33,15 @@ body {
     background-color: var(--grey-800);
     width: 90%;
     max-width: 380px;
-    min-width: 340px;
     margin: 5px auto;
     padding: 1.5rem 2rem;
     border-radius: 0.8rem;
 }
 
 .profile-picture {
-    max-width: 80px;
+    max-width: 100px;
     border-radius: 50%;
-    margin: 1rem;
+    margin: 1.2rem;
     border: 1px solid var(--green);
 }
 
@@ -54,7 +53,7 @@ body {
     font-size: 1rem;
     font-weight: 600;
     color: var(--green);
-    margin: 0.8rem auto 1.2rem;
+    margin: 0.7rem auto 1.2rem;
 }
 
 .designation {
@@ -77,42 +76,40 @@ a {
     text-decoration: none;
 }
 
-.social-media-links a {
+.social-link {
     font-weight: 700;
     background-color: var(--grey-700);
     display: inline-block;
     width: 95%;
-    min-height: 3rem;
-    height: 100%;
     margin: 0.5rem 0.4rem;
-    padding: 0.6rem;
+    padding: 0.5rem;
     border-radius: 0.4rem;
     border-color: var(--green);
 }
 
-.social-media-links a:link {
+.social-link:link {
     color: white;
 }
 
-.social-media-links a:visited {
+.social-link:visited {
     color: white;
 }
 
-.social-media-links a:hover,
-.social-media-links a:focus {
+.social-link:hover,
+.social-link:focus {
     background-color: var(--green);
     color: var(--grey-700);
     scale: 1.01;
+    cursor: pointer;
 }
 
-.social-media-links a:focus {
-    outline: 1px solid var(--green);
+.social-link:focus {
+    outline: 1px solid var(--green);    
 }
 
-.social-media-links a:active {
+.social-link:active {
     color: rosybrown;
 }
-
 
 .attribution {
     position: fixed;
@@ -121,19 +118,29 @@ a {
     font-size: 0.9rem;
 }
 
-.attribution a:link {
+.attribution a {
     color: var(--green);
-}
-
-.attribution a:visited {
-    color: rosybrown;
 }
 
 .attribution a:hover,
 .attribution a:focus {
     color: white;
+    cursor: pointer;
 }
 
 .attribution a:active {
     color: rosybrown;
+}
+
+
+@media (max-width: 400px) {
+    .profile-container {
+        min-width:300px;
+    }
+
+
+    .social-link {
+        min-width: 100%;    
+        margin: 0.5rem auto;
+    }
 }
