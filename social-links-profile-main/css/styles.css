@@ -10,14 +10,130 @@
 html {
     font-family: Inter, sans-serif;
     font-size: 14px;
+    color: white;
+    text-align: center;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
 
 body {
-    
+    background-color: var(--grey-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    background-color: var(--grey-800);
+    width: 90%;
+    max-width: 380px;
+    min-width: 340px;
+    margin: 5px auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.8rem;
+}
+
+.profile-picture {
+    max-width: 80px;
+    border-radius: 50%;
+    margin: 1rem;
+    border: 1px solid var(--green);
+}
+
+.full-name {
+    font-size: 1.7rem;
+}
+
+.address {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--green);
+    margin: 0.8rem auto 1.2rem;
+}
+
+.designation {
+    margin: 2rem auto 1rem;
+}
+
+.social-media-links {
+    margin: 1.5rem auto 0;
+}
+
+.social-media-links ul {
+    list-style-type: none;
+}
+
+.social-media-links li {
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social-media-links a {
+    font-weight: 700;
+    background-color: var(--grey-700);
+    display: inline-block;
+    width: 95%;
+    min-height: 3rem;
+    height: 100%;
+    margin: 0.5rem 0.4rem;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    border-color: var(--green);
+}
+
+.social-media-links a:link {
+    color: white;
+}
+
+.social-media-links a:visited {
+    color: white;
+}
+
+.social-media-links a:hover,
+.social-media-links a:focus {
+    background-color: var(--green);
+    color: var(--grey-700);
+    scale: 1.01;
+}
+
+.social-media-links a:focus {
+    outline: 1px solid var(--green);
+}
+
+.social-media-links a:active {
+    color: rosybrown;
+}
+
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.attribution a:link {
+    color: var(--green);
+}
+
+.attribution a:visited {
+    color: rosybrown;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    color: white;
+}
+
+.attribution a:active {
+    color: rosybrown;
 }
