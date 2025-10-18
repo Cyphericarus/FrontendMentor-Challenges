@@ -49,8 +49,7 @@ html {
 }
 
 body {
-    width: 80%;
-    margin: 5% auto;
+    margin: 5% auto 0;
 }
 
 .feature-card__header {
@@ -65,15 +64,17 @@ body {
     font-weight: 200;
 }
 
-.feature-card__main{
+.feature-card__main {
     margin: 1em auto;
+    max-width: 70%;
+    width: 95%;
 }
 
 .feature-card__description {
     text-align: center;
     margin: auto;
     color: var(--grey-500);
-    width: 45%;
+    width: 43%;
 }
 
 .feature-card {
@@ -123,13 +124,15 @@ body {
     margin: 0.4em auto;
 }
 
+.feature-card__feature-icon {
+    margin-top: 0.5em;
+}
+
 .attribution {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     color: var(--grey-400);
     font-size: 0.9rem;
+    text-align: center;
+    margin: 6em auto 0;
 }
 
 .attribution a {
@@ -138,4 +141,38 @@ body {
 
 .attribution a:hover {
     color: var(--grey-500);
-}   
+}
+
+@media (max-width: 850px) {
+
+    .feature-card__description {
+        width: 95%;
+    }
+
+    .feature-card {
+        display: flex;
+        flex-flow: column;
+        gap: 2em;
+        margin: 3em auto;
+        max-width: 30em;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .feature-card__header {
+        margin: 4em 1em 1em;
+        padding: 0 0.3em;
+    }
+
+    .feature-card__main {
+        max-width: 85%;
+        width: 100%;
+    }
+
+    .attribution {
+        margin: 2em auto;
+        padding: 0 3em;
+    }
+}
