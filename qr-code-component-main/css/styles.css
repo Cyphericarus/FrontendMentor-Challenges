@@ -1,0 +1,198 @@
+/* outfit-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/qr-code-component-main/assets/fonts/outfit-v15-latin-regular.woff2') format('woff2');
+}
+
+/* outfit-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/qr-code-component-main/assets/fonts/outfit-v15-latin-700.woff2') format('woff2');
+}
+
+/* ===================
+        CSS RESET START
+   =================== */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: model-box;
+}
+
+
+/* 2. Remove default margin and padding*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* 10. Create a root stacking context */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* ===================
+        CSS RESET END
+   =================== */
+
+:root {
+    --white: hsl(0, 0%, 100%);
+
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+
+    --border-radius: 0.8em;
+}
+
+html {
+    font-family: Outfit, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+body {
+    background-color: var(--slate-300);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    max-width: 21em;
+    width: 100%;
+
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+}
+
+.qr-code-card {
+    padding: 1em;
+}
+
+main:hover {
+    scale: 1.01;
+}
+
+.qr-code-card__image {
+    border-radius: var(--border-radius);
+}
+
+.qr-code-card__title {
+    font-size: 1.5em;
+    margin-top: 1em;
+    line-height: 1.25em;
+    color: var(--slate-900);
+    font-weight: 700;
+}
+
+.qr-code-card__description {
+    margin: 1em 0;
+    padding: 0 1em;
+    color: var(--slate-500);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 1em;
+    font-size: 0.9em;
+    color: var(--slate-500);
+}
+
+.attribution a:hover {
+    color: var(--slate-900);
+    zoom: 1.01;
+    text-decoration: none;
+}       
+
+.attribution a:focus {
+    outline: 2px solid blue;
+    zoom: 1.01;
+    text-decoration: none;
+    color: var(--slate-500);
+}
+
+@media (max-width: 400px) {
+    main {
+        max-width: 85%;
+    }
+}
+
+
+/* 
+
+    Pneumonic for order of pseudo classes of anchor tag: 
+
+    "Let Visitors Have A Focus" = link, visited, hover, active, focus
+
+*/
