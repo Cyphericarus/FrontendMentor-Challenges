@@ -82,5 +82,3 @@ Coded by [**CypherIcarus**](https://github.com/Cyphericarus).
 
 Contributions, issues, and feature requests are welcome!  
 Feel free to fork this repository and submit improvements. 😊  
-
----
