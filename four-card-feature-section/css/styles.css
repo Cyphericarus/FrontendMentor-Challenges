@@ -39,7 +39,7 @@
 
 html {
     font-family: Poppins, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 * {
@@ -50,6 +50,7 @@ html {
 
 body {
     margin: 5% auto 0;
+    background: rgb(244, 244, 244);
 }
 
 .feature-card__header {
@@ -59,8 +60,12 @@ body {
     color: var(--grey-500);
 }
 
+.feature-card__title {
+    font-size: 2.2rem;
+}
+
 .feature-card__tagline {
-    font-size: 2em;
+    font-size: 2.2rem;
     font-weight: 200;
 }
 
@@ -74,20 +79,22 @@ body {
     text-align: center;
     margin: auto;
     color: var(--grey-500);
-    width: 43%;
+    width: 50%;
 }
 
 .feature-card {
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-    gap: 2em;
-    margin: 3em auto;
+    gap: 2.3rem;
+    margin: 3rem auto;
 }
 
 .feature-card__feature {
     border-radius: 0.5em;
-    box-shadow: 0 0.1em 0.9em rgb(192, 210, 229);
-    padding: 2em;
+    box-shadow: 0 0.1em 0.9em rgb(200, 214, 228);
+    padding: 1.5rem 1rem 2rem 2rem;
+    background-color: var(--white);
+    width: 103%;
 }
 
 .feature-card__feature:nth-child(1) {
@@ -114,14 +121,21 @@ body {
     justify-self: flex-end;
 }
 
+.feature-card__feature-icon img {
+    width: 85%;
+    height: auto;
+}
+
 .feature-card__feature-title {
     color: var(--grey-500);
 }
 
 .feature-card__feature-description {
     color: var(--grey-400);
-    padding-right: 2em;
+    padding-right: 0.5rem;
     margin: 0.4em auto;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
 }
 
 .feature-card__feature-icon {
@@ -132,7 +146,7 @@ body {
     color: var(--grey-400);
     font-size: 0.9rem;
     text-align: center;
-    margin: 6em auto 0;
+    margin: 5em auto 0;
 }
 
 .attribution a {
@@ -164,6 +178,14 @@ body {
     .feature-card__header {
         margin: 4em 1em 1em;
         padding: 0 0.3em;
+    }
+
+    .feature-card__title {
+        font-size: 1.8rem;
+    }
+
+    .feature-card__tagline {
+        font-size: 1.8rem;
     }
 
     .feature-card__main {
