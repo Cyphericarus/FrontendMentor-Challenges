@@ -6,16 +6,8 @@
     font-display: swap;
     font-family: 'Figtree';
     font-style: normal;
-    font-weight: 500;   /*  medium  */
-    src: url('../assets/fonts/static/Figtree-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'Figtree';
-    font-style: normal;
-    font-weight: 800;   /* ExtraBold */
-    src: url('../assets/fonts/static/Figtree-ExtraBold.ttf') format('truefont');
+    font-weight: 100 900;
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
 }
 
 
@@ -45,7 +37,12 @@ video {
 
 
 /* 3. improve line wrapping */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-wrap: balance;
 }
 
@@ -98,9 +95,75 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+
+    background-color: var(--yellow);
 }
 
 /*  ==========================
         LAYOUT& ELEMENTS
     ========================== */
+
+.card {
+    max-width: 50%;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1.2rem;
+
+    background-color: var(--white);
+    border: 0.1rem solid var(--gray-950);
+    border-radius: 1rem;
+    box-shadow: 0.4rem 0.4rem 0 0.01rem var(--gray-950);
+}
+
+.card__image {
+    border-radius: 0.7rem;
+    margin-bottom: 1.6rem
+}
+
+.card__label {
+    background-color: var(--yellow);
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.3rem;
+    font-weight: 900;
+}
+
+.card__time {
+    display: block;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card__title {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.card__description {
+    color: var(--gray-500);
+    margin: 1rem 0 2rem;
+    line-height: 1.5rem;
+}
+
+.card-author {
+    display: flex;
+    flex-flow: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-author__avatar {
+    min-width: 12%;
+}
+
+.card-author__name {
+    font-weight: 800;
+}
+
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
 
