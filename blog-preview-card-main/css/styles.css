@@ -18,9 +18,12 @@
     src: url('../assets/fonts/static/Figtree-ExtraBold.ttf') format('truefont');
 }
 
+
+
 /*  ===========================
         CSS RESET
     =========================== */
+
 
 /* 1. Using more intuitive box-modelling and reset margin & padding */
 *,
@@ -31,6 +34,7 @@
     padding: 0;
 }
 
+
 /* 2. improve media defaults */
 img,
 picture,
@@ -38,6 +42,7 @@ video {
     display: block;
     max-width: 100%;
 }
+
 
 /* 3. improve line wrapping */
 h1, h2, h3, h4, h5, h6 {
@@ -47,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     text-wrap: pretty;
 }
+
 
 /* 4. inherit font properties for forms */
 input,
@@ -77,8 +83,24 @@ li {
 }
 
 
+/*  ==========================
+        BASE
+    ========================== */
 
 html {
-    font-family: Figtree, sans-serif;
+    font-family: 'Figtree', sans-serif;
     font-size: 16px;
 }
+
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*  ==========================
+        LAYOUT& ELEMENTS
+    ========================== */
+
