@@ -1,6 +1,6 @@
-/* ===========================
-   FONTS
-   =========================== */
+/*  ===========================
+        FONTS
+    =========================== */
 
 @font-face {
     font-display: swap;
@@ -18,12 +18,67 @@
     src: url('../assets/fonts/static/Figtree-ExtraBold.ttf') format('truefont');
 }
 
-/* ===========================
-   CSS RESET
-   =========================== */
+/*  ===========================
+        CSS RESET
+    =========================== */
 
+/* 1. Using more intuitive box-modelling and reset margin & padding */
 *,
 *::before,
 *::after {
-    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. improve media defaults */
+img,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* 3. improve line wrapping */
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+/* 4. inherit font properties for forms */
+input,
+button,
+text-area,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+/* 5. imporove list styling */
+ul,
+li {
+    list-style-type: none;
+}
+
+
+/*  ==========================
+        CSS VARIABLES
+    ========================== */
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+
+
+
+html {
+    font-family: Figtree, sans-serif;
+    font-size: 16px;
 }
