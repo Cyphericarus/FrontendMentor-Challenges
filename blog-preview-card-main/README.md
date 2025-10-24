@@ -2,7 +2,7 @@
 
 [![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) [![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS) [![Frontend Mentor|166x20](https://img.shields.io/badge/Challenge-Frontend%20Mentor-purple)](https://www.frontendmentor.io)
 
-![preview] (./preview.jpg)
+![preview](./preview.jpg)
 
 This project is a **Blog Preview Card Main** layout created as a solution for a challenge from [**Frontend Mentor**](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS).
 
