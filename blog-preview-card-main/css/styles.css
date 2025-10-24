@@ -11,7 +11,6 @@
 }
 
 
-
 /*  ===========================
         CSS RESET
     =========================== */
@@ -46,9 +45,9 @@ h6 {
     text-wrap: balance;
 }
 
-p {
+/* p {
     text-wrap: pretty;
-}
+} */
 
 
 /* 4. inherit font properties for forms */
@@ -112,7 +111,7 @@ body {
     background-color: var(--white);
     border: 0.1rem solid var(--gray-950);
     border-radius: 1rem;
-    box-shadow: 0.4rem 0.4rem 0 0.01rem var(--gray-950);
+    box-shadow: 0.4rem 0.4rem 0 0.04rem var(--gray-950);
 }
 
 .card__image {
@@ -129,10 +128,39 @@ body {
 
 .card__time {
     display: block;
-    margin: 1rem 0;
+    margin: 1rem 0 0.8rem;;
     font-size: 0.9rem;
     font-weight: 600;
 }
+
+.card a {
+    text-decoration: none;
+}
+
+.card a:link {
+    color: var(--gray-950);
+}
+
+.card a:visited {
+    color: var(--gray-950);
+}
+
+.card a:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.card a:active {
+    color: var(--gray-950);
+}
+
+.card a:focus {
+    outline: 0.4rem solid var(--gray-950);
+    color: var(--yellow);
+}
+
+/*  Pneumonic for order of pseudo classes of anchor tag: 
+    "Let Visitors Have A Focus" = link, visited, hover, active, focus  */
 
 .card__title {
     font-weight: 900;
@@ -141,7 +169,7 @@ body {
 
 .card__description {
     color: var(--gray-500);
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 1.5rem;
     line-height: 1.5rem;
 }
 
@@ -150,10 +178,11 @@ body {
     flex-flow: flex-start;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 0.2rem;
 }
 
 .card-author__avatar {
-    min-width: 12%;
+    max-width: 11%;
 }
 
 .card-author__name {
@@ -165,5 +194,35 @@ body {
     position: fixed;
     bottom: 0;
     margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: var(--gray-500);
 }
 
+.attribution a {
+    text-decoration: none;
+    color: var(--gray-950);
+}
+
+.attribution a:hover {
+    color: var(--white);
+}
+
+.attribution a:focus {
+    color: var(--white);
+    outline: 0.1rem solid var(--gray-950);      
+}
+
+@media (max-width: 700px) {
+
+    .card {
+        max-width: 25rem;
+        width: 90%
+    }
+}
+
+@media (max-width: 380px) {
+
+    .card {
+        font-size: 0.9rem;
+    }
+}
