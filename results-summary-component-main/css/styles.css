@@ -1,0 +1,118 @@
+/*  ===========================
+        FONTS
+    =========================== */
+
+/* hanken-grotesk-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/hanken-grotesk-v12-latin-500.woff2') format('woff2');
+}
+
+/* hanken-grotesk-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/hanken-grotesk-v12-latin-700.woff2') format('woff2');
+}
+
+/* hanken-grotesk-800 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/hanken-grotesk-v12-latin-800.woff2') format('woff2');
+}
+
+
+/*  ===========================
+        CSS RESET
+    =========================== */
+
+/* 1. Using more intuitive box modelling, resetting padding and margin  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* 2. Imporve media defaults */
+img,
+video,
+figure {
+    display: block;
+    width: 100%;
+}
+
+/* 3. Improve line wrapping */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* 4. Inherit font properties for forms */
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* 5. Improve list styling */
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+/*  ===========================
+        CSS VARIABLES
+    =========================== */
+
+:root {
+
+    /* Primary */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients  */
+    --light-slate-blue: hsl(252, 100%, 67%);/* background */
+    --light-royal-blue: hsl(241, 81%, 54%);/* background */
+
+    --violet-blue: hsla(256, 72%, 46%, 1);/* circle */
+    --persian-blue: hsla(241, 72%, 46%, 0);/* circle */
+
+    /* Neutral  */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/*  ===========================
+        BASE
+    =========================== */
+
+html {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+body {
+
+}
