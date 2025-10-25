@@ -62,7 +62,7 @@ select {
 
 /* 5. imporove list styling */
 ul,
-li {
+ol {
     list-style-type: none;
 }
 
