@@ -209,8 +209,8 @@ body {
 .card__result-description {
     color:var(--light-lavender);
     padding: 0rem 2rem;
-    margin-bottom: 2rem;
-    max-width:97%;
+    margin-bottom: auto auto 2.5rem ;
+    max-width:95%
 }
 
 
