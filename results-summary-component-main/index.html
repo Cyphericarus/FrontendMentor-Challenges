@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Results Summary Component</title>
-    
-    <!-- favicon - icon for website -->
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon-96x96.png">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Open Graph meta tags for seo/social media -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:description" content="Results summary card of the Cognitive abilities of a person" />
-    <meta property="og:image" content="" />
+  <title>Results Summary Component</title>
 
-    <!-- preload custom font -->
-    <link rel="preload" href="./assets/fonts/hanken-grotesk-v12-latin-500.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" href="./assets/fonts/hanken-grotesk-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" href="./assets/fonts/hanken-grotesk-v12-latin-800.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    
-    <!-- external css -->
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
+  <!-- favicon - icon for website -->
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon-96x96.png">
 
-  <body>
-    
-  </body>
+  <!-- Open Graph meta tags for seo/social media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:description" content="Results summary card of the Cognitive abilities of a person" />
+  <meta property="og:image" content="" />
+
+  <!-- preload custom font -->
+  <link rel="preload" href="./assets/fonts/hanken-grotesk-v12-latin-500.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <link rel="preload" href="./assets/fonts/hanken-grotesk-v12-latin-700.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+  <link rel="preload" href="./assets/fonts/hanken-grotesk-v12-latin-800.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" />
+
+  <!-- external css -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <main>
+    <aricle class="card">
+      <section class="card__section card__result">
+        <h2 class="card__result-title">Your Result</h2>
+        <p class="card__result-score" data-score="76"><strong>76</strong>of 100</p>
+        <h3 class="card__result-score-label">Great</h3>
+        <p class="card__result-description"> Great You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+
+      <section class="card__section card__summary">
+        <h2 class="card__summary-title">Summary</h2>
+        <ul class="card__summary-list">
+          <li class="card__summary-item card__summary--reaction">
+            <img class="card__summary-icon" aria-hidden="true" src="./assets/images/icon-reaction.svg" alt="">
+            <span class="card__summary-name">Reaction</span>
+            <span class="card__summary-score" data-score="80"><strong>80</strong> / 100</span>
+          </li>
+          <li class="card__summary-item card__summary--memory">
+            <img class="card__summary-icon" aria-hidden="true" src="./assets/images/icon-memory.svg" alt="">
+            <span class="card__summary-name">Memory</span>
+            <span class="card__summary-score" data-score="92"><strong>92</strong> / 100</span>
+          </li>
+          <li class="card__summary-item card__summary--verbal">
+            <img class="card__summary-icon" aria-hidden="true" src="./assets/images/icon-verbal.svg" alt="">
+            <span class="card__summary-name">Verbal</span>
+            <span class="card__summary-score" data-score="61"><strong>61</strong> / 100</span>
+          </li>
+          <li class="card__summary-item card__summary--visual">
+            <img class="card__summary-icon" aria-hidden="true" src="./assets/images/icon-visual.svg" alt="">
+            <span class="card__summary-name">Visual</span>
+            <span class="card__summary-score" data-score="73"><strong>73</strong> / 100</span>
+          </li>
+        </ul>
+        <button class="card__cta-button">Continue</button>
+      </section>
+    </aricle>
+  </main>
+</body>
+
 </html>
 
 
@@ -43,9 +85,7 @@
   76
   of 100
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
+ 
   Summary
 
   Reaction
