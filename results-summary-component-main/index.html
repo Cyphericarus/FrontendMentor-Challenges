@@ -11,30 +11,25 @@
   <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon-96x96.png">
 
   <!-- Open Graph meta tags for seo/social media -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:description" content="Results summary card of the Cognitive abilities of a person" />
-  <meta property="og:image" content="" />
-
-  <!-- preload custom font -->
-  <link rel="preload" href="./assets/fonts/hanken-grotesk-v12-latin-500.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous" />
-  <link rel="preload" href="./assets/fonts/hanken-grotesk-v12-latin-700.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous" />
-  <link rel="preload" href="./assets/fonts/hanken-grotesk-v12-latin-800.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="Results summary card of the Cognitive abilities of a person">
+  <meta property="og:image" content="">
 
   <!-- external css -->
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <main>
-    <aricle class="card">
+    <article class="card" aria-label="results summary card">
       <section class="card__section card__result">
         <h2 class="card__result-title">Your Result</h2>
-        <p class="card__result-score" data-score="76"><strong>76</strong>of 100</p>
+        <div class="card__result-score" data-score="76" aria-label="Score 76 of 100">
+          <strong class="card__result-score-achieved">76</strong>
+          <span class="card__result-score-total"> of 100</span>
+        </div>
         <h3 class="card__result-score-label">Great</h3>
         <p class="card__result-description"> Great You scored higher than 65% of the people who have taken these tests.
         </p>
@@ -66,12 +61,12 @@
         </ul>
         <button class="card__cta-button">Continue</button>
       </section>
-    </aricle>
+    </article>
   </main>
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/cyphericarus/" targer="_blank">Icarus Cypher</a>.
+    Coded by <a href="https://github.com/cyphericarus/" target="_blank">Icarus Cypher</a>.
   </footer>
 </body>
 
