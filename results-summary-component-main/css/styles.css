@@ -173,10 +173,9 @@ body {
 
 .card__result-title {
     color: var(--light-lavender);
-    margin: 2rem auto 0;
+    margin: 1.9rem auto 1rem;
     font-size: 1.35rem;
-
-    
+    padding-bottom: 0.5rem;
 }
 
 .card__result-score {
@@ -203,19 +202,34 @@ body {
 .card__result-score-label {
     color: var(--white);
     font-size: 1.7rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.3rem;
 }
 
 .card__result-description {
     color:var(--light-lavender);
     padding: 0rem 2rem;
-    margin-bottom: auto auto 2.5rem ;
-    max-width:95%
+    margin: 0.5rem auto 2.8rem ;
+    max-width:90%
 }
-
 
 .card__summary {
     background: var(--white);
+}
+
+.card__summary-title {
+    color: var(--dark-gray-blue);
+    margin: 1.9rem auto 1rem;
+    font-size: 1.35rem;
+    padding-left: 2rem;
+}
+
+.card__summary-list {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 
