@@ -321,10 +321,15 @@ body {
     transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-.card__cta-button:hover {
+.card__cta-button:hover,
+.card__cta-button:focus {
     background: Var(--light-royal-blue);
     border-color: var(--light-royal-blue);
     cursor: pointer;
+}
+
+.card__cta-button:focus {
+    outline: 2px solid var(--light-slate-blue);
 }
 
 .attribution {
@@ -341,10 +346,14 @@ body {
     color: var(--cobalt-blue);
 }
 
-.attribution a:hover {
+.attribution a:hover,
+.attribution a:focus {
     color: var(--light-slate-blue);
 }
 
+/*  =========================================
+        FOR DEVICES WITH SCREEN WIDTH < 800px
+    ========================================= */
 
 @media (max-width: 800px) {
 
@@ -359,6 +368,10 @@ body {
     }
 }
 
+/*  =========================================
+        FOR DEVICES WITH SCREEN WIDTH < 600px
+    ========================================= */
+
 @media (max-width: 600px) {
 
     html {
@@ -372,7 +385,6 @@ body {
 
     .card {
         min-width: 100%;
-        min-height: 100%;
         flex-flow: column;
         border-radius: none;
     }
@@ -384,112 +396,75 @@ body {
     .card__result {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+        border-bottom-left-radius: calc(var(--border-radius) + 5px);
+        border-bottom-right-radius: calc(var(--border-radius) + 5px);
+    }
+
+    .card__result-title {
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin-top: 1.5rem;
     }
 
     .card__result::before {
-        top: 40%;
+        top: 39%;
         width: 9rem;
         height: 9rem;
     }
 
     .card__result-score {
-        margin: 2.8rem auto;
-    }
-
-    .card__result-score-achieved {
-        font-size: 3.7rem;
-        font-weight: 900;
-        color: var(--white);
-    }
-
-    .card__result-score-total {
-        font-size: 1rem;
-        color: var(--light-slate-blue);
+        margin: 2.5rem auto;
     }
 
     .card__result-score-label {
         color: var(--white);
-        font-size: 1.7rem;
-        margin-bottom: 0.4rem;
-        padding-bottom: 0.3rem;
+        font-size: 1.4rem;
     }
 
     .card__result-description {
-        color: var(--light-lavender);
-        padding: 0rem 2rem;
-        margin: 0.5rem auto 2.8rem;
-        max-width: 90%;
+        margin: 0.5rem auto 2.6rem;
     }
 
     .card__summary {
-        height: 100%;
-
+        max-width: 100%;
+        width: 95%;
     }
 
     .card__summary-title {
-        color: var(--dark-gray-blue);
-        font-size: 1.35rem;
-        padding-left: 2rem;
+        margin-top: 1.2rem;
+        font-size: 1.2rem;
     }
 
     .card__summary-list {
-        display: flex;
-        flex-flow: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 0.7rem;
-
-        max-width: 16rem;
-        width: 95%;
-        margin: 1.6rem auto 0;
+        gap: 1.2rem;
+        max-width: 82%;
+        width: 100%;
     }
 
     .card__summary-item {
-        width: 100%;
-        padding: 0.95rem 0.5rem 0.95rem 0.9rem;
-        border-radius: 0.7rem;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .card__summary-label {
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-    }
-
-    .card__summary-score strong {
-        color: var(--dark-gray-blue);
-    }
-
-    .card__summary-score {
-        padding-right: 0.3rem;
-        color: lightslategray;
+        padding: 1rem;
+        padding-right: 0.6rem;
     }
 
     .card__cta-button {
         display: block;
-        margin: 2.5rem auto 0.5rem;
-        padding: 0.8rem;
+        margin:auto;
+        margin-top: 1.6rem;
+        padding: 1rem;
 
-        max-width: 16rem;
+        max-width: 85%;
         width: 95%;
-        border-radius: 5rem;
-        background-color: var(--dark-gray-blue);
-        color: var(--white);
-
-        transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        border-radius: 6rem;
     }
 
     .attribution {
         background-color: var(--white);
+        bottom: auto;
 
-        position: relative;
-        bottom:auto;
+        position: static;
         margin: 0 auto;
-        width: 100vw;
-
+        padding-top: 0.6rem; 
+        text-align: center;
+        width: 100%;
     }
 }
