@@ -107,6 +107,12 @@ ol {
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
 
+    --light-red-bg: hsl(353.33, 100%, 98.24%);
+    --light-yellow-bg: hsl(36, 100%, 98.04%);
+    --light-green-bg: hsl(156, 62.5%, 96.86%);
+    --light-blue-bg: hsl(234.55, 100%, 97.84%);
+
+
     --border-radius: 1.6rem;
 }
 
@@ -214,34 +220,92 @@ body {
 }
 
 .card__summary {
-    background: var(--white);
+
 }
 
 .card__summary-title {
     color: var(--dark-gray-blue);
-    margin: 1.9rem auto 1rem;
     font-size: 1.35rem;
     padding-left: 2rem;
+    margin: 1rem auto 1.4rem;
 }
 
 .card__summary-list {
     display: flex;
     flex-flow: column;
+    align-items: flex-start;
     justify-content: center;
+    gap: 0.85rem;
+    padding-left: 2rem;
+    margin: 0 auto 2rem;
+}
+
+.card__summary-item {
+    background-color:aliceblue;
+    /* width: 75%; */
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-radius: 0.6rem;
+
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 1rem
+}
+
+.card__summary-label {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card__summary-item:nth-child(1) {
+    background-color: var(--light-red-bg);
+}
+
+.card__summary-item:nth-child(1) .card__summary-name {
+    color: var(--light-red);
 }
 
 
+.card__summary-item:nth-child(2) {
+    background-color: var(--light-yellow-bg);
+}
 
+.card__summary-item:nth-child(2) .card__summary-name {
+    color: var(--orangey-yellow);
+}
+
+
+.card__summary-item:nth-child(3) {
+    background-color: var(--light-green-bg);
+}
+
+.card__summary-item:nth-child(3) .card__summary-name {
+    color: var(--green-teal);
+}
+
+
+.card__summary-item:nth-child(4) {
+    background-color: var(--light-blue-bg);
+}
+
+.card__summary-item:nth-child(4) .card__summary-name {
+    color: var(--cobalt-blue);
+}
 
 .card__summary-item img {
     display: inline-block;
     width: auto;
 }
 
-
-
+.card__cta-button {
+    display: block;
+    margin: 1rem auto 2rem;
+    padding: 0.5rem;
+    
+}
 
 
 
