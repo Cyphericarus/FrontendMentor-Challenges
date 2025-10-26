@@ -23,20 +23,20 @@
 
 <body>
   <main>
-    <article class="card" aria-label="results summary card">
-      <section class="card__section card__result">
+    <article class="card" aria-label="results summary card" aria-labelledby="result-heading">
+      <section id="result-heading" class="card__section card__result">
         <h2 class="card__result-title">Your Result</h2>
         <div class="card__result-score" data-score="76">
           <strong class="card__result-score-achieved">76</strong>
           <span class="card__result-score-total"> of 100</span>
         </div>
-        <h3 class="card__result-score-label">Great</h3>
+        <p class="card__result-score-label">Great</p>
         <p class="card__result-description">You scored higher than 65% of the people who have taken these tests.
         </p>
       </section>
 
-      <section class="card__section card__summary">
-        <h2 class="card__summary-title">Summary</h2>
+      <section class="card__section card__summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading" class="card__summary-title">Summary</h2>
         <ul class="card__summary-list">
           <li class="card__summary-item card__summary--reaction">
             <div class="card__summary-label">
@@ -67,14 +67,14 @@
             <span class="card__summary-score" data-score="73"><strong>73</strong> / 100</span>
           </li>
         </ul>
-        <button class="card__cta-button">Continue</button>
+        <button type="button" class="card__cta-button">Continue</button>
       </section>
     </article>
   </main>
 
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/cyphericarus/" target="_blank">Icarus Cypher</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/cyphericarus/" target="_blank" rel="noopener noreferrer">Icarus Cypher</a>.
   </footer>
 </body>
 
