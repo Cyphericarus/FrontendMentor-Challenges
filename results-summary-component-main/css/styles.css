@@ -113,6 +113,8 @@ ol {
     --light-blue-bg: hsl(234.55, 100%, 97.84%);
 
 
+
+
     --border-radius: 1.6rem;
 }
 
@@ -136,8 +138,8 @@ body {
 }
 
 .card {
-    max-width: 92%;
-    width: 100%;
+    max-width: 42rem;
+    width: 98%;
     margin: 0 auto;
 
     display: flex;
@@ -146,7 +148,7 @@ body {
 
     background-color: var(--white);
     border-radius: var(--border-radius);
-    overflow: hidden;
+    box-shadow: 0.2rem 0.2rem 4rem var(--light-lavender);
 }
 
 .card__section {
@@ -179,7 +181,7 @@ body {
 
 .card__result-title {
     color: var(--light-lavender);
-    margin: 1.9rem auto 1rem;
+    margin: 2rem auto 1rem;
     font-size: 1.35rem;
     padding-bottom: 0.5rem;
 }
@@ -213,21 +215,20 @@ body {
 }
 
 .card__result-description {
-    color:var(--light-lavender);
+    color: var(--light-lavender);
     padding: 0rem 2rem;
-    margin: 0.5rem auto 2.8rem ;
-    max-width:90%
+    margin: 0.5rem auto 2.8rem;
+    max-width: 90%;
 }
 
 .card__summary {
-
+    background-color: inherit;
 }
 
 .card__summary-title {
     color: var(--dark-gray-blue);
     font-size: 1.35rem;
     padding-left: 2rem;
-    margin: 1rem auto 1.4rem;
 }
 
 .card__summary-list {
@@ -235,29 +236,21 @@ body {
     flex-flow: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 0.85rem;
-    padding-left: 2rem;
-    margin: 0 auto 2rem;
+    gap: 0.7rem;
+
+    max-width: 16rem;
+    width: 95%;
+    margin: 1.6rem auto 0;
 }
 
 .card__summary-item {
-    background-color:aliceblue;
-    /* width: 75%; */
-    text-align: center;
-    padding: 1rem 0.5rem;
-    border-radius: 0.6rem;
+    width: 100%;
+    padding: 0.95rem 0.5rem 0.95rem 0.9rem;
+    border-radius: 0.7rem;
 
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    gap: 1rem
-}
-
-.card__summary-label {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0.5rem;
 }
 
 .card__summary-item:nth-child(1) {
@@ -267,7 +260,6 @@ body {
 .card__summary-item:nth-child(1) .card__summary-name {
     color: var(--light-red);
 }
-
 
 .card__summary-item:nth-child(2) {
     background-color: var(--light-yellow-bg);
@@ -300,14 +292,40 @@ body {
     width: auto;
 }
 
-.card__cta-button {
-    display: block;
-    margin: 1rem auto 2rem;
-    padding: 0.5rem;
-    
+.card__summary-label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
 }
 
+.card__summary-score strong {
+    color: var(--dark-gray-blue);
+}
 
+.card__summary-score {
+    padding-right: 0.3rem;
+    color: lightslategray;
+}
+
+.card__cta-button {
+    display: block;
+    margin: 2.5rem auto 0.5rem;
+    padding: 0.8rem;
+
+    max-width: 16rem;
+    width: 95%;
+    border-radius: 5rem;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+
+    transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.card__cta-button:hover {
+    background: Var(--light-royal-blue);
+    border-color: var(--light-royal-blue);
+    cursor: pointer;
+}
 
 .attribution {
     color: var(--dark-gray-blue);
@@ -316,4 +334,162 @@ body {
     position: fixed;
     bottom: 0;
     margin-bottom: 1rem;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--cobalt-blue);
+}
+
+.attribution a:hover {
+    color: var(--light-slate-blue);
+}
+
+
+@media (max-width: 800px) {
+
+    .card {
+        max-width: 36rem;
+        width: 95%;
+    }
+
+    .card__summary-list,
+    .card__cta-button {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .card {
+        min-width: 100%;
+        min-height: 100%;
+        flex-flow: column;
+        border-radius: none;
+    }
+
+    .card__section {
+        min-width: 100%;
+    }
+
+    .card__result {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .card__result::before {
+        top: 40%;
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .card__result-score {
+        margin: 2.8rem auto;
+    }
+
+    .card__result-score-achieved {
+        font-size: 3.7rem;
+        font-weight: 900;
+        color: var(--white);
+    }
+
+    .card__result-score-total {
+        font-size: 1rem;
+        color: var(--light-slate-blue);
+    }
+
+    .card__result-score-label {
+        color: var(--white);
+        font-size: 1.7rem;
+        margin-bottom: 0.4rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .card__result-description {
+        color: var(--light-lavender);
+        padding: 0rem 2rem;
+        margin: 0.5rem auto 2.8rem;
+        max-width: 90%;
+    }
+
+    .card__summary {
+        height: 100%;
+
+    }
+
+    .card__summary-title {
+        color: var(--dark-gray-blue);
+        font-size: 1.35rem;
+        padding-left: 2rem;
+    }
+
+    .card__summary-list {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0.7rem;
+
+        max-width: 16rem;
+        width: 95%;
+        margin: 1.6rem auto 0;
+    }
+
+    .card__summary-item {
+        width: 100%;
+        padding: 0.95rem 0.5rem 0.95rem 0.9rem;
+        border-radius: 0.7rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card__summary-label {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .card__summary-score strong {
+        color: var(--dark-gray-blue);
+    }
+
+    .card__summary-score {
+        padding-right: 0.3rem;
+        color: lightslategray;
+    }
+
+    .card__cta-button {
+        display: block;
+        margin: 2.5rem auto 0.5rem;
+        padding: 0.8rem;
+
+        max-width: 16rem;
+        width: 95%;
+        border-radius: 5rem;
+        background-color: var(--dark-gray-blue);
+        color: var(--white);
+
+        transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    }
+
+    .attribution {
+        background-color: var(--white);
+
+        position: relative;
+        bottom:auto;
+        margin: 0 auto;
+        width: 100vw;
+
+    }
 }
