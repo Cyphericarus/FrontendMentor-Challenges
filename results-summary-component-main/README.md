@@ -23,7 +23,7 @@ It displays a main component of a Results & Summary card.
 
 ## 🔎 Overview
 
-**✅ Live Demo:** [Link](https://app.netlify.com/projects/results-summary-card-main/overview)
+**✅ Live Demo:** [Link](https://results-summary-card-main.netlify.app/)
 
 The goal of this project was to build a **clean, responsive card** that adapts well to both desktop and mobile devices.
 
@@ -35,22 +35,22 @@ The focus was on **semantic HTML**, **modern CSS practices**, and **accessibilit
 
 ### Desktop View
 
-![Desktop-view](https://github.com/user-attachments/assets/0a4dd7c8-821c-421f-b286-9bdfd29b26f8)  
+![Desktop-view](https://github.com/user-attachments/assets/f6bec268-3ba7-4d6e-9dd7-eb82d1dda894)  
 
 * Card is centered using flex-box.  
 * Consistent spacing and typography.
 
 ### Mobile View
 
-![Mobile-preview](https://github.com/user-attachments/assets/f4b28536-42a5-4ecb-bc27-fb47bea713e5)  
-  
+![Mobile-preview](https://github.com/user-attachments/assets/41964c09-7adf-487c-8e11-4becd6adaa19)  
+
 * media-query is used to adjust widths for readability on smaller screens.   
 
 ---
 
 ## ✨ Features
 
-* **Blog Preview Card**: Conatins blog image, label, published date, title, description etc.
+* **Results Summary Card**: Conatins sample results of combined congnitive abilities score with gradient background, label, and summary of the scores of various congnitive abilities etc.
 * **Responsive Design**: Works seamlessly on both desktop and mobile.  
 * **Modern CSS Practices**: Built with CSS variables, article, flexbox, hover effects and media queries.  
 * **Accessible HTML Structure**: Uses `main`, `article`and descriptive alt texts for images.  
@@ -60,16 +60,17 @@ The focus was on **semantic HTML**, **modern CSS practices**, and **accessibilit
 ## 🛠 Built With
 
 * **HTML5** (Semantic HTML)  
-* **CSS3** (Flexbox, Media Queries)  
+* **CSS3** (Flexbox, gradient, Media Queries)  
 * **Fonts**:  
-  - [Figtree](https://gwfh.mranftl.com/fonts/figtree?subsets=latin)
+  - [Hanken Grotesk](https://gwfh.mranftl.com/fonts/hanken-grotesk?subsets=latin)
 
 ---
 
 ## ⚡ Challenges
 
-* **CSS Overlay**: Adjusting the card size for different screen sizes.
-* **Fixed widths**: Ensuring proper adjustments of widths of the elements.
+* **CSS Overlay**: Adjusting the structure and size of the card for different screen sizes.
+* **CSS Gradient**: Implementing the gradients like placing one gradient over another gradient and placing text as an overlay on these two gradients was a bit challenge initially. 
+* **Fixed widths**: Ensuring proper adjustments of widths of the elements. 
 
 ---
 
