@@ -1,0 +1,47 @@
+
+/*  ===========================
+        CSS RESET
+    =========================== */
+
+/* 1. Using more intuitive box modelling, resetting padding and margin  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* 2. Imporve media defaults */
+img,
+video,
+figure {
+    display: block;
+    width: 100%;
+}
+
+/* 3. Improve line wrapping */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* 4. Inherit font properties for forms */
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* 5. Improve list styling */
+
+ul,
+ol {
+    list-style-type: none;
+}
