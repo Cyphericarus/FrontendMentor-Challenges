@@ -1,0 +1,13 @@
+/*  ==================
+    FONT 
+    ================== */
+
+    /*  */
+@font-face {
+    font-family: 'League Spartan', sans-serif;
+    src: url('../assets/fonts/league-spartan-v15-latin/league-spartan-v15-latin-regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: regular; /* 400 */
+    font-display: swap;
+}
+
