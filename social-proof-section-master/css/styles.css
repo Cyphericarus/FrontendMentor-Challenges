@@ -2,17 +2,30 @@
     FONT 
     ================== */
 
-    /* League Spartan - regular */
+/* League Spartan -  400 */
 @font-face {
     font-family: 'League Spartan', sans-serif;
     src: url('../assets/fonts/league-spartan-v15-latin/league-spartan-v15-latin-regular.woff2') format('woff2');
     font-style: normal;
-    font-weight: regular; /* 400 */
+    font-weight: regular;
     font-display: swap;
 }
 
+/* League Spartan -  500 */
 @font-face {
     font-family: 'League Spartan', sans-serif;
     src: url('../assets/fonts/league-spartan-v15-latin/league-spartan-v15-latin-500.woff2') format('woff2');
-
+    font-style: normal;
+    font-weight: medium;
+    font-display: swap;
 }
+
+/* League Spartan -  700 */
+@font-face {
+    font-family: 'League Spartan', sans-serif;
+    src: url('../assets/fonts/league-spartan-v15-latin/league-spartan-v15-latin-700.woff2') format('woff2');
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+}
+
