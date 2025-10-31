@@ -4,7 +4,7 @@
 
 /* League Spartan -  400 */
 @font-face {
-    font-family: 'League Spartan', sans-serif;
+    font-family: 'League Spartan';
     src: url('../assets/fonts/league-spartan-v15-latin/league-spartan-v15-latin-regular.woff2') format('woff2');
     font-style: normal;
     font-weight: regular;
@@ -13,7 +13,7 @@
 
 /* League Spartan -  500 */
 @font-face {
-    font-family: 'League Spartan', sans-serif;
+    font-family: 'League Spartan';
     src: url('../assets/fonts/league-spartan-v15-latin/league-spartan-v15-latin-500.woff2') format('woff2');
     font-style: normal;
     font-weight: medium;
@@ -22,7 +22,7 @@
 
 /* League Spartan -  700 */
 @font-face {
-    font-family: 'League Spartan', sans-serif;
+    font-family: 'League Spartan';
     src: url('../assets/fonts/league-spartan-v15-latin/league-spartan-v15-latin-700.woff2') format('woff2');
     font-style: normal;
     font-weight: bold;
@@ -56,10 +56,54 @@ html {
 }
 
 body {
-    background: url('../assets/images/bg-pattern-top-desktop.svg');
+    background-image: url('../assets/images/bg-pattern-top-desktop.svg'), url('../assets/images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, auto;
+    background-position: top left, bottom right;
+
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
+
 /*  ==========================
-        LAYOUT& ELEMENTS
+    LAYOUT& ELEMENTS
     ========================== */
 
+.social-proof__rating-stars img,
+.testimonial__avatar {
+    width: auto;
+}
+
+.social-proof__rating-stars {
+    display: flex;
+}
+
+.social-proof {
+    max-width: 80vw;
+    width: 100%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.social-proof__intro {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+}
+
+.social-proof__header {
+    background-color: rgb(225, 213, 197);
+}
+
+.social-proof__ratings {
+    background-color: rgb(197, 225, 202);
+}
+
+.social-proof__testimonials {
+    background-color: rgb(224, 225, 197);
+
+}
