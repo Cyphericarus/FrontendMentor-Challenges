@@ -8,18 +8,15 @@
   <title>Skillify | Testimonials</title>
   <link rel="icon" href="./assets/images/favicon-96x96.png">
 
-  <meta property="og:title" content="Skillify | Tesimonials">
+  <meta property="og:title" content="Skillify | Testimonials">
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:description" content="A section testimonials of the Skillify website">
 
-  <link rel="preload"
-    href="./assets/fonts/barlow-semi-condensed-v16-latin/barlow-semi-condensed-v16-latin-regular.woff2" as="font"
-    type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./assets/fonts/barlow-semi-condensed-v16-latin/barlow-semi-condensed-v16-latin-500.woff2"
-    as="font" type="font/woff2" crossorigin="anonymous">
+    as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./assets/fonts/barlow-semi-condensed-v16-latin/barlow-semi-condensed-v16-latin-600.woff2"
-    as="font" type="font/woff2" crossorigin="anonymous">
+    as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
@@ -28,11 +25,17 @@
 <body>
   <main class="main">
     <section id="testimonials" class="testimonials">
-      <h2 class="sr_only">Testimonials</h2>
+      <h2 class="sr-only">Testimonials</h2>
 
-      <article class="testimonial testimonial__daniel">
-        <h3 class="testimonial__title">Daniel Clifford</h3>
-        <p class="testimonial__badge">Verified Graduate</p>
+      <article class="testimonial testimonial--daniel">
+        <div class="testimonial__profile">
+          <img src="./assets/images/image-daniel.jpg" alt="Daniel Clifford  " class="testimonial__profile-avatar"
+            height="50" width="50">
+          <div class="testimonial__profile-info">
+            <h3 class="testimonial__title">Daniel Clifford</h3>
+            <p class="testimonial__badge">Verified Graduate</p>
+          </div>
+        </div>
         <p class="testimonial__description">I received a job offer mid-course, and the subjects I learned were current,
           if not more so, in the company I joined. I honestly feel I got every penny’s worth.</p>
         <blockquote class="testimonial__detailed-description">
@@ -44,9 +47,15 @@
         </blockquote>
       </article>
 
-      <article class="testimonial testimonial__jonathan">
-        <h3 class="testimonial__title">Jonathan Waltersd</h3>
-        <p class="testimonial__badge">Verified Graduate</p>
+      <article class="testimonial testimonial--jonathan">
+        <div class="testimonial__profile">
+          <img src="./assets/images/image-jonathan.jpg" alt="Jonathan Walters" class="testimonial__profile-avatar"
+            height="50" width="50">
+          <div class="testimonial__profile-info">
+            <h3 class="testimonial__title">Jonathan Walters</h3>
+            <p class="testimonial__badge">Verified Graduate</p>
+          </div>
+        </div>
         <p class="testimonial__description">The team was very supportive and kept me motivated.</p>
         <blockquote class="testimonial__detailed-description">
           <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
@@ -54,9 +63,15 @@
         </blockquote>
       </article>
 
-      <article class="testimonial testimonial__jeanette">
-        <h3 class="testimonial__title">Jeanette Harmon</h3>
-        <p class="testimonial__badge">Verified Graduate</p>
+      <article class="testimonial testimonial--jeanette">
+        <div class="testimonial__profile">
+          <img src="./assets/images/image-jeanette.jpg" alt="Jeanette Harmon" class="testimonial__profile-avatar"
+            height="50" width="50">
+          <div class="testimonial__profile-info">
+            <h3 class="testimonial__title">Jeanette Harmon</h3>
+            <p class="testimonial__badge">Verified Graduate</p>
+          </div>
+        </div>
         <p class="testimonial__description">An overall wonderful and rewarding experience</p>
         <blockquote class="testimonial__detailed-description">
           <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
@@ -64,9 +79,15 @@
         </blockquote>
       </article>
 
-      <article class="testimonial testimonial__patrick">
-        <h3 class="testimonial__title">Patrick Abrams</h3>
-        <p class="testimonial__badge">Verified Graduate</p>
+      <article class="testimonial testimonial--patrick">
+        <div class="testimonial__profile">
+          <img src="./assets/images/image-patrick.jpg" alt="Patrick Abrams" class="testimonial__profile-avatar"
+            height="50" width="50">
+          <div class="testimonial__profile-info">
+            <h3 class="testimonial__title">Patrick Abrams</h3>
+            <p class="testimonial__badge">Verified Graduate</p>
+          </div>
+        </div>
         <p class="testimonial__description">Awesome teaching support from TAs who did the bootcamp themselves. Getting
           guidance from them and learning from their experiences was easy.</p>
         <blockquote class="testimonial__detailed-description">
@@ -77,9 +98,15 @@
         </blockquote>
       </article>
 
-      <article class="testimonial testimonial__kira">
-        <h3 class="testimonial__title">Kira Whittle</h3>
-        <p class="testimonial__badge">Verified Graduate</p>
+      <article class="testimonial testimonial--kira">
+        <div class="testimonial__profile">
+          <img src="./assets/images/image-kira.jpg" alt="Kira Whittle" class="testimonial__profile-avatar" height="50"
+            width="50">
+          <div class="testimonial__profile-info">
+            <h3 class="testimonial__title">Kira Whittle</h3>
+            <p class="testimonial__badge">Verified Graduate</p>
+          </div>
+        </div>
         <p class="testimonial__description">Such a life-changing experience. Highly recommended!</p>
         <blockquote class="testimonial__detailed-description">
           <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
@@ -96,11 +123,11 @@
   </main>
 
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      rel="noopener noreferrer">Frontend Mentor</a>.
     ⚔️ Coded by <a href="https://github.com/cyphericarus/" target="_blank" rel="noopener noreferrer">Cypher Icarus</a>.
   </footer>
 
 </body>
 
 </html>
-
