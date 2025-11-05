@@ -83,36 +83,40 @@ body {
 .testimonial {
     color: var(--white);
     padding: 1.5rem 2.5rem 0.5rem;
-    border-radius: 0.7rem ;
-    box-shadow: 0.1rem 0.1rem 0.8rem var(--grey-200);
+    border-radius: 0.7rem;
 }
 
 .testimonial--daniel {
     grid-area: daniel;
     background-color: var(--purple-500);
-    position:relative;
+    position: relative;
+    box-shadow: 0.1rem 0.5rem 1rem var(--grey-100);
 }
 
 .testimonial--jonathan {
     grid-area: jonathan;
     background-color: var(--grey-500);
+    box-shadow: 0.1rem 0.5rem 10rem var(--grey-200);
 }
 
 .testimonial--jeanette {
     grid-area: jeanette;
     background-color: var(--white);
     color: var(--grey-500);
+    box-shadow: 0.1rem 0.5rem 10rem var(--grey-400);
 }
 
 .testimonial--patrick {
     grid-area: patrick;
     background-color: var(--dark-blue);
+    box-shadow: 0.1rem 0.5rem 5rem var(--grey-200);
 }
 
 .testimonial--kira {
     grid-area: kira;
     background-color: var(--white);
     color: var(--grey-500);
+    box-shadow: 0.1rem 0.5rem 10rem var(--grey-400);
 }
 
 .testimonial__profile {
@@ -174,7 +178,7 @@ body {
 .testimonial__description {
     font-size: 1.55em;
     font-weight: 600;
-    margin-block: 1rem; 
+    margin-block: 1rem;
     position: relative;
     z-index: 2;
 }
@@ -201,4 +205,126 @@ body {
     bottom: 1%;
     right: 50%;
     transform: translateX(50%);
+}
+
+.attribution a {
+    color: var(--purple-500);
+    text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    color: var(--grey-500);
+    text-decoration: underline;
+}
+
+
+/*  ================
+    FOR TABLET SCREENS
+    ================ */
+
+@media(max-width: 769px) {
+
+    /* ================
+    BASE
+    ================ */
+
+    body {
+        max-width: 48rem;
+    }
+
+
+    /* ================
+    LAYOUT & STYLING
+    ================ */
+
+    .testimonials {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            'daniel daniel jonathan'
+            'jeanette patrick patrick'
+            'kira kira x';
+        gap: 1.5rem;
+
+        padding: 1rem;
+        margin-block-start: 2rem;
+    }
+
+    .testimonial {
+        padding: 1rem 2rem;
+    }
+
+    .testimonial--daniel {
+        box-shadow: 0 0 0.5rem var(--grey-100);
+    }
+
+    .testimonial--jonathan {
+        box-shadow: 0.1rem 0.5rem 10rem var(--grey-200);
+    }
+
+    .testimonial--jeanette {
+        box-shadow: 0.1rem 0.1rem 1rem var(--grey-400);
+    }
+
+    .testimonial--patrick {
+        box-shadow: 0 0 1rem var(--grey-200);
+    }
+
+    .testimonial--kira {
+        box-shadow: 0.1rem 0.1rem 1rem var(--grey-400);
+    }
+}
+
+
+/*  ================
+    FOR MOBILE SCREENS
+    ================ */
+
+@media(max-width: 600px) {
+
+    /* ================
+    BASE
+    ================ */
+
+    body {
+        max-width: 40rem;
+        width: 90%;
+        min-width: 23rem;
+    }
+
+
+    /* ================
+    LAYOUT & STYLING
+    ================ */
+
+    .testimonials {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            'daniel'
+            'jonathan'
+            'jeanette'
+            'patrick'
+            'kira';
+        margin-block-start: 1rem;
+        gap: 2rem;
+    }
+
+    .testimonial {
+        padding: 1.5rem 2.7rem;
+        text-wrap: balance;
+    }
+
+    .testimonial--daniel .testimonial__profile-info::after {
+        content: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .attribution {
+        position: relative;
+        text-align: center;
+        margin-block-start: 1rem;
+    }
 }
