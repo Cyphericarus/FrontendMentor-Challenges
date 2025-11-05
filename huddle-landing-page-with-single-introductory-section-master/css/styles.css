@@ -1,0 +1,76 @@
+/*  ==================
+    FONTS
+    ================== */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/poppins-v24-latin/poppins-v24-latin-600.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/open-sans-v44-latin/open-sans-v44-latin-regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+
+/*  ==================
+    CSS VARIABLES
+    ================== */
+:root {
+    --purple-700: hsl(257, 40%, 49%);
+    --magenta-400: hsl(300, 69%, 71%);
+
+    --white: hsl(0, 0%, 100%);
+}
+
+
+/*  ==================
+    BASE
+    ================== */
+
+body {
+    font-family: 'Open sans', sans-serif;
+    color: var(--white);
+
+    background-color: var(--purple-700);
+    background-image: url('../assets/images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-repeat: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/*  ==================
+    LAYOUT & STYLING
+    ================== */
+
+.site-header {
+    align-self: flex-start;
+    margin: 3rem 4rem;
+}
+
+.site-header__logo {
+    margin-block-start: 0.5rem;
+    margin-inline-start: 0.5rem;
+    transform: scale(1.04);
+}
+
+.hero {
+    background-color: burlywood;
+    display: flex;
+}
+
+
+
+
