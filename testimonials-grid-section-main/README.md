@@ -23,7 +23,7 @@ It displays a grid layout section of testimonial cards based on different screen
 
 ## 🔎 Overview
 
-**✅ Live Demo:** [Link](https://blog-preview-card-main-component.netlify.app/)
+**✅ Live Demo:** [Link](https://testimonial-grid-layout-section.netlify.app/)
 
 The goal of this project was to build a **clean, responsive card** that adapts well to both desktop, tablet and mobile devices.
 
