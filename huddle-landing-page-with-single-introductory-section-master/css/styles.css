@@ -40,7 +40,6 @@ body {
 
     background-color: var(--purple-700);
     background-image: url('../assets/images/bg-desktop.svg');
-    background-repeat: no-repeat;
     background-repeat: cover;
 
     display: flex;
@@ -57,20 +56,118 @@ body {
 
 .site-header {
     align-self: flex-start;
-    margin: 3rem 4rem;
+    margin: 1rem 4rem 5.5rem;
 }
 
 .site-header__logo {
-    margin-block-start: 0.5rem;
-    margin-inline-start: 0.5rem;
     transform: scale(1.04);
+    margin-inline-start: 0.5rem;
 }
 
 .hero {
-    background-color: burlywood;
+    width: 90%;
+    margin: 0  auto;
+
     display: flex;
+    justify-content: center;
 }
 
+.hero__image-container {
+    min-width: 55%;
+    width: 100%;
+    padding: 0 1rem 1rem;
+}
 
+.hero__content {
+    max-width: 44%;
+    width: 100%;
+    padding: 2.5rem 1.5rem 2.5rem 2.2rem;
+}
 
+.hero__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
 
+.hero__description {
+    font-size: 1.125rem;
+    line-height: 1.65rem;
+    margin-block-start: 1.2rem;
+    margin-block-end: 2.5rem;
+}
+
+.hero__button {
+    background-color: var(--white);
+    color: var(--purple-700);
+    text-decoration: none;
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.5rem rgb(25, 22, 22);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+    background: var(--magenta-400);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.site-footer {
+    align-self: flex-end;
+    margin-block-start: 0.5rem;
+    margin-inline-end: 5rem;
+    padding: 0.8rem 0;
+
+}
+
+.social__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.social__list-item a {
+    padding: 0.5rem 0.6rem;
+    border: 0.1rem solid var(--white);
+    border-radius: 50%;
+}
+
+.fa-brands {
+    color: var(--white);
+}
+
+.fa-brands:hover {
+    color: var(--magenta-400);
+}
+
+.social__list-item a:hover,
+.social__list-item a:focus {
+    border: 0.1rem solid var(--magenta-400);
+    border-radius: 50%;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 1%;
+    color: hsl(350, 100%, 82%);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    color: hsl(199, 92%, 75%);
+}
+
+@media (max-width: 900px) {
+    .attribution {
+        position: relative;
+        text-align: center;
+    }
+}
