@@ -66,7 +66,7 @@ body {
 
 .hero {
     width: 90%;
-    margin: 0  auto;
+    margin: 0 auto;
 
     display: flex;
     justify-content: center;
@@ -146,18 +146,24 @@ body {
 .social__list-item a:hover,
 .social__list-item a:focus {
     border: 0.1rem solid var(--magenta-400);
-    border-radius: 50%;
+}
+
+.social__list-item a:hover .fa-brands,
+.social__list-item a:focus .fa-brands {
+    color: var(--magenta-400);
 }
 
 .attribution {
     position: fixed;
     bottom: 1%;
     color: hsl(350, 100%, 82%);
+    font-size: 0.7rem;
 }
 
 .attribution a {
     text-decoration: none;
     color: var(--white);
+    transition: color 0.2s ease-in-out;
 }
 
 .attribution a:hover,
