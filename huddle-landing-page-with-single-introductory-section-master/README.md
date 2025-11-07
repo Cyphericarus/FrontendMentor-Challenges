@@ -23,7 +23,7 @@ It displays a simple introductory landing page of Huddle(website) based on diffe
 
 ## 🔎 Overview
 
-**✅ Live Demo:** [Link](https://testimonial-grid-layout-section.netlify.app/)
+**✅ Live Demo:** [Link](https://huddle-landing-page-section-intro.netlify.app/)
 
 The goal of this project was to build a **clean, responsive landing page with section** that adapts well to both desktop, tablet and mobile devices.
 
