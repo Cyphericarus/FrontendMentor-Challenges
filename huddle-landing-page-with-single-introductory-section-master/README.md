@@ -6,7 +6,7 @@
 
 This project is a **Huddle Landing Page with Introductory Section** layout created as a solution for a challenge from [**Frontend Mentor**](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0).
 
-It displays a simaple introductory landing page of Huddle(website) based on different screen widths.
+It displays a simple introductory landing page of Huddle(website) based on different screen widths.
 
 ---
 
@@ -50,7 +50,7 @@ The focus was on **semantic HTML**, **modern CSS practices**, and **accessibilit
 
 ## ✨ Features
 
-* **Introductory Section**: Omplemented with heading, description and a button to register.
+* **Introductory Section**: Implemented with heading, description and a button to register.
 * **Responsive Design**: Works seamlessly on desktop, tablet and mobile.  
 * **Modern CSS Practices**: Built with CSS variables, section, flex box, hover effects and media queries.  
 * **Accessible HTML Structure**: Uses semantics like `main`, `section`and descriptive alt texts for images.  
@@ -62,8 +62,8 @@ The focus was on **semantic HTML**, **modern CSS practices**, and **accessibilit
 * **HTML5** (Semantic HTML)  
 * **CSS3** (Grid, Position, Media Queries)  
 * **Fonts**:  
-  - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-  - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+  - [Poppins](https://fonts.google.com/specimen/Poppins)
+  - [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 
 ---
 
