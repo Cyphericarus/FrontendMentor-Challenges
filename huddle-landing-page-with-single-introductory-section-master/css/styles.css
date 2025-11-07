@@ -40,7 +40,7 @@ body {
 
     background-color: var(--purple-700);
     background-image: url('../assets/images/bg-desktop.svg');
-    background-repeat: cover;
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -171,9 +171,131 @@ body {
     color: hsl(199, 92%, 75%);
 }
 
+@media (max-width: 1200px) {
+    .hero__image-container {
+        display: grid;
+        place-items: center;
+    }
+
+    .hero__content {
+        padding: 1rem;
+    }
+
+    .hero__image-container {
+        padding-block-start: 1rem
+    }
+}
+
 @media (max-width: 900px) {
     .attribution {
         position: relative;
         text-align: center;
+    }
+}
+
+@media (max-width: 751px) {
+
+    body {
+        background-image: url('../assets/images/bg-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        justify-content: flex-start;
+    }
+
+    .site-header {
+        margin: 4rem 5rem;
+    }
+
+    .site-header__logo {
+        transform: scale(1.2);
+    }
+
+    .hero {
+        flex-direction: column;
+        margin-block-start: 3rem;
+    }
+
+    .hero__image-container {
+        max-width: 100%;
+        margin-block-end: 6rem;
+    }
+
+    .hero__image {
+        width: 92%;
+    }
+
+    .hero__content {
+        max-width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__description {
+        font-size: 2rem;
+        line-height: 3rem;
+        padding: 1rem;
+        margin-block-end: 3.2rem;
+    }
+
+    .hero__button {
+        max-width: 60%;
+        width: 100%;
+        padding: 3.5% 24%;
+        border-radius: 2.3rem;
+        font-size: 1.5rem;
+    }
+
+    .site-footer {
+        align-self: center;
+        margin-inline-end: 0;
+        margin-block-start: 6.9rem;
+    }
+
+    .social__list {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .social__list-item {
+        padding: 2rem 1rem;
+    }
+
+    .social__list-item a {
+        padding: 1.2rem 1rem;
+    }
+
+    .fa-brands {
+        color: var(--white);
+        font-size: 1.5rem;
+    }
+
+    .attribution {
+        margin-block-start: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        margin-inline-start: 3.5rem;
+        margin-block-end: 2rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin-block-start: 2rem;
+    }
+
+    .hero__image-container {
+        margin-block-end: 3rem;
+    }
+
+    .site-footer {
+        margin-block-start: 3rem;
     }
 }
