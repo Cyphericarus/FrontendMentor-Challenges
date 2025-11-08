@@ -48,14 +48,58 @@ html {
 }
 
 body {
-    /* background-color: var(--blue-950); */
-    background: url('../assets/images/bg-desktop.png');
+    font-family: 'Raleway', sans-serif;
+
+    min-height: 100vh;
+    background-color: var(--blue-950);
+    background-image: url('../assets/images/bg-desktop.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background-position: bottom;
+    background-size: 100% auto;
+
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
 }
+
 
 /*  ==================
     LAYOUT & STYLING
     ================== */
 
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    max-width: 70rem;
+    width: 100%;
+}
+
+.left-card {
+    background-color: var(--blue-850);
+    max-width: 40%;
+    width: 100%;
+}
+
+.left-card__logo {
+    width: auto;
+}
+
+.right-card {
+    background-color: var(--blue-850);
+    max-width: 60%;
+    width: 100%;
+}
+
+.icon-container__list {
+    display: flex;
+    
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 1%;
+}
