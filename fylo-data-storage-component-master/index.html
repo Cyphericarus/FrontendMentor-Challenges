@@ -15,8 +15,8 @@
   <link rel="preload" href="./assets/fonts/raleway-v37-latin/raleway-v37-latin-700.woff2" as="font" type="font/woff2"
     crossorigin>
 
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -25,9 +25,12 @@
       <img class="left-card__logo" src="./assets/images/logo.svg" alt="Fylo logo">
       <div class="icon-container">
         <ul class="icon-container__list">
-          <li class="icon-container__list-item"><img src="./assets/images/icon-document.svg" alt=""></li>
-          <li class="icon-container__list-item"><img src="./assets/images/icon-folder.svg" alt=""></li>
-          <li class="icon-container__list-item"><img src="./assets/images/icon-upload.svg" alt=""></li>
+          <li class="icon-container__list-item icon-container__list-item1"><img src="./assets/images/icon-document.svg"
+              alt=""></li>
+          <li class="icon-container__list-item icon-container__list-item2"><img src="./assets/images/icon-folder.svg"
+              alt=""></li>
+          <li class="icon-container__list-item icon-container__list-item3"><img src="./assets/images/icon-upload.svg"
+              alt=""></li>
         </ul>
       </div>
     </div>
@@ -36,19 +39,24 @@
       <div class="right-card__badge">
         <span class="right-card__badge-value">185 GB Left</span>
       </div>
-      <p id="data-used-info" class="right-card__data-used">You’ve used <strong><data value="815">815</data> GB</strong> of your storage</p>
-      <div class="usage-meter" role="progressbar" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="815" aria-describedby="data-used-info">
-        <div class="usage-meter__fill"><span class="usage-meter__indicator"></span></div>
-      </div>
-      <div class="usage-meter__label">
-        <span class="usage-meter__label--min"><data value="0">0</data> GB</span>
-        <span class="usage-meter__label--max"><data value="1000">1000</data> GB</span>
+      <div class="right-card__data-info">
+        <p id="data-used-info" class="right-card__data-used">You’ve used <strong><data value="815">815</data>
+            GB</strong> of your storage</p>
+        <div class="usage-meter" role="progressbar" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="815"
+          aria-describedby="data-used-info">
+          <div class="usage-meter__fill"><span class="usage-meter__indicator"></span></div>
+        </div>
+        <div class="usage-meter__label">
+          <span class="usage-meter__label--min"><data value="0">0</data> GB</span>
+          <span class="usage-meter__label--max"><data value="1000">1000</data> GB</span>
+        </div>
       </div>
     </div>
   </main>
 
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      rel="noopener noreferrer">Frontend Mentor</a>.
     ⚔️ Coded by <a href="https://github.com/cypgericarus/" target="_blank" rel="noopener noreferrer">Cypher Icarus</a>.
   </footer>
 </body>
