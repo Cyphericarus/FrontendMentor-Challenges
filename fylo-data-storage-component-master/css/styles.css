@@ -101,8 +101,6 @@ body {
     background-color: var(--blue-850);
     max-width: 61;
     width: 100%;
-
-    position: relative;
 }
 
 .icon-container__list {
@@ -148,8 +146,7 @@ body {
     padding: 2rem 3.7rem;
     border-radius: 0.4rem;
     position: absolute;
-    right: 10%;
-    top: -150%;
+    right: 1%;   
     z-index: 1;
 }
 
@@ -162,6 +159,7 @@ body {
 
 .right-card__data-info {
     padding: 3rem;
+    position: relative;
 }
 
 
