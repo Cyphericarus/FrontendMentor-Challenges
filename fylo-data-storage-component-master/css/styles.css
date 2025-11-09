@@ -150,12 +150,6 @@ body {
     z-index: 1;
 }
 
-.right-card__badge::after {
-    content: "◀";
-    position: relative;
-    color: var(--blue-850);
-    z-index: 1;
-}
 
 .right-card__data-info {
     padding: 3rem;
