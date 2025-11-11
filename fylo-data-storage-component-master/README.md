@@ -23,7 +23,7 @@ It displays a simple page component of Fylo(storage website) based on different 
 
 ## 🔎 Overview
 
-**✅ Live Demo:** [Link](https://huddle-landing-page-section-intro.netlify.app/)
+**✅ Live Demo:** [Link](https://fylo-data-storage-main-comp.netlify.app/)
 
 The goal of this project was to build a **clean, responsive component page** that adapts well to both desktop, tablet and mobile devices.
 
