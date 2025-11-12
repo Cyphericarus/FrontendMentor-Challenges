@@ -1,0 +1,313 @@
+/*  ===================
+    CUSTOM FONT
+    =================== */
+
+/* DM Sans normal Variable Font */
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../assets/fonts/DMSans-VariableFont.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* DM Sans italic Variable Font */
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../assets/fonts/DMSans-Italic-VariableFont.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/*  ===================
+    VARIABLES
+    =================== */
+
+:root {
+    /* colors */
+    --purple-100: hsl(254, 88%, 90%);
+    --purple-500: hsl(256, 67%, 59%);
+
+    --yellow-100: hsl(31, 66%, 93%);
+    --yellow-500: hsl(39, 100%, 71%);
+
+    --body-background: whitesmoke;
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);
+}
+
+
+/*  ===================
+    BASE
+    =================== */
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--body-background, hsl(0, 0%, 96%));
+
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+
+/*  ===================
+    LAYOUT & STYLING
+    =================== */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+.main {
+    width: 100%;
+    max-width: 93%;
+    margin-block-start: 2rem;
+    margin-inline-start: 0.3rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    gap: 2rem;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+
+
+/* stars-rating */
+
+.stars-rating {
+    background-color: var(--purple-500);
+    padding: 2rem;
+    color: var(--white);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.stars-rating__title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+    letter-spacing: 0.05rem;
+}
+
+.stars-rating__title--yellow {
+    font-weight: 500;
+    color: var(--yellow-500);
+}
+
+.stars-rating__figure {
+    max-width: 90%;
+    width: 100%;
+}
+
+.stars-rating__image {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-block-end: 0.3rem;
+}
+
+
+/* multiple-platforms */
+
+.multiple-platforms {
+    background-color: var(--white);
+    padding: 0.8rem 0.6rem 0.8rem 1rem;
+
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+.multiple-platforms__title {
+    font-size: 1.4rem;
+    text-wrap: wrap;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1.3rem;
+}
+
+.multiple-platforms__image {
+    border-radius: 2rem;
+}
+
+
+/* consistent schedule */
+
+.consistent-schedule {
+    background-color: var(--yellow-500);
+    padding-block-start: 0.7rem;
+    padding-inline-end: 3rem;
+    padding-block-end: 0;
+    overflow: hidden;
+    min-height: 12rem
+}
+
+.consistent-schedule__title {
+    font-size: 1.4rem;
+    letter-spacing: -0.08rem;
+    line-height: 1.4rem;
+}
+
+.consistent-schedule__image {
+    margin-block-start: 0.8rem;
+    max-width: 77%;
+}
+
+
+/* schedule posts */
+
+.schedule-posts {
+    background-color: var(--purple-100);
+    text-align: center;
+    padding-block-start: 1.2rem;
+}
+
+.schedule-posts__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-block-end: 1rem;
+}
+
+.schedule-posts__description {
+    max-width: 96%;
+    margin-block-start: 1.4rem;
+    line-height: 1.1rem;
+    padding-block-end: 1rem;
+}
+
+
+/* grow followers */
+
+.grow-followers {
+    background-color: var(--purple-500);
+    color: white;
+    padding: 1.2rem 3rem;
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.grow-followers__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-wrap: wrap;
+    line-height: 1.6rem;
+}
+
+
+/* audience growth */
+
+.audience-growth {
+    background-color: var(--white);
+    padding: 0.7rem 5rem 1rem 1.3rem;
+}
+
+.audience-growth__title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.audience-growth__percentage {
+    font-size: 2.5rem;
+    display: block;
+    font-weight: 600;
+}
+
+.audience-growth__image {
+    max-width: 80%;
+    margin-block-start: 1.5rem;
+}
+
+
+/* create post */
+
+.create-post {
+    background-color: var(--yellow-100);
+    padding: 1.5rem 1.2rem 1.5rem 1.8rem;
+}
+
+.create-post__title {
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: -1px;
+    line-height: 1.7rem;
+}
+
+.create-post__title--purple {
+    color: var(--purple-500);
+}
+
+.create-post__image {
+    max-width: 65%;
+    margin-block-start: 1.2rem;
+}
+
+
+/* ai content */
+
+.ai-content {
+    background-color: var(--yellow-500);
+    padding: 1.3rem 3rem 0.9rem 1.2rem;
+}
+
+.ai-content__title {
+    font-size: 1.7rem;
+    letter-spacing: -1px;
+    line-height: 1.7rem;
+    text-wrap: wrap;
+}
+
+.ai-content__image {
+    max-width: 83%;
+    margin-block-start: 1.2rem;
+}
+
+
+/* attribution */
+
+.attribution {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-block-start: 1rem;
+}
+
+.attribution a {
+    color: rgb(225, 139, 26);
+    transition: color 0.2s ease-in-out;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    color: rgb(163, 50, 163);
+}
+
+@media (min-width: 576px) {}
