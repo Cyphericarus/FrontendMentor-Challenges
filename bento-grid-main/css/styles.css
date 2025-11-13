@@ -338,3 +338,34 @@ body {
     }
 }
 
+@media (min-width: 768px) {
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+    .stars-rating {
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+
+    .consistent-schedule {
+        grid-area: 1 / 3 / span 1 / span 1;
+    }
+
+    .schedule-posts {
+        grid-area: 2 / 1 / span 2 / span 1;
+    }
+
+    .multiple-platforms {
+        grid-area: 4 / 1 / span 1 / span 1;
+    }
+
+    .grow-followers {
+        grid-area: 3 / 3 / span 2 / span 1;
+    }
+
+    .ai-content {
+        grid-area: 3 / 2 / span 2 / span 1;
+    }
+}
