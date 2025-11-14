@@ -14,8 +14,9 @@ It displays a simple page component of Social Media Management Features in a gri
 - [🔎 Overview](#-overview)
 - [📱 Responsive Design](#-responsive-design)
 - [✨ Features](#-features)
-- [🛠 Built With](#-built-with)
+- [⚙️ Built With](#-built-with)
 - [⚡ Challenges](#-challenges)
+- [🛠️ Tools Used](#-tools-used)
 - [🙌 Attribution](#-attribution)
 - [🤝 Contributing](#-contributing)
 
@@ -74,7 +75,7 @@ The focus was on **semantic HTML**, **modern CSS practices**, and **accessibilit
 
 ---
 
-## 🛠 Built With
+## ⚙️ Built With
 
 * **HTML5** (Semantic HTML)  
 * **CSS3** (Grid, Flex-box, Media Queries)  
