@@ -61,7 +61,7 @@ body {
     LAYOUT & STYLING
     =================== */
 
-.main {
+.bento-grid {
     width: 100%;
     max-width: 93%;
     margin-block-start: 2rem;
@@ -159,11 +159,10 @@ body {
 
 .consistent-schedule {
     background-color: var(--yellow-500);
-    padding-block-start: 0.7rem;
+    padding-block: 0.7rem 0;
     padding-inline-end: 3rem;
-    padding-block-end: 0;
     overflow: hidden;
-    min-height: 12rem
+    min-height: 12rem;
 }
 
 .consistent-schedule__title {
@@ -311,7 +310,7 @@ body {
 }
 
 @media (min-width: 576px) {
-    .main {
+    .bento-grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         gap: 2rem;
@@ -339,7 +338,7 @@ body {
 }
 
 @media (min-width: 768px) {
-    .main {
+    .bento-grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         gap: 2rem;
@@ -367,5 +366,217 @@ body {
 
     .ai-content {
         grid-area: 3 / 2 / span 2 / span 1;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .bento-grid {
+        max-width: 78%;
+        width: 100%;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto 3.2rem 8.2rem auto;
+        grid-template-areas:
+            'create-post stars-rating stars-rating schedule-post'
+            'create-post multiple-platforms consistent-schedule schedule-post'
+            'ai-content multiple-platforms consistent-schedule schedule-post'
+            'ai-content audience-growth grow-followers grow-followers';
+            align-content: center;
+        margin-block-start: 4rem;
+    }
+
+
+    /* create post */
+
+    .create-post {
+        grid-area: create-post;
+
+        padding-inline: 1.6rem;
+        padding-block-start: 1.625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .create-post__title {
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: -0.12rem;
+        line-height: 2rem;
+    }
+
+    .create-post__image {
+        min-width: 100%;
+        height: auto;
+        padding-inline: 0;
+    }
+
+
+    /* stars rating */
+
+    .stars-rating {
+        grid-area: stars-rating;
+        padding-block: 3.5rem 3.2rem;
+        gap: 1.5rem;
+    }
+
+    .stars-rating__title {
+        font-size: 3.5rem;
+        letter-spacing: -0.03rem;
+        line-height: 3.2rem;
+    }
+
+    .stars-rating__image {
+        max-width: 10.625rem;
+    }
+
+
+    /* schedule posts */
+
+    .schedule-posts {
+        grid-area: schedule-post;
+
+        text-align: start;
+        padding: 0 0 0 1.5rem;
+        overflow: hidden;
+    }
+
+    .schedule-posts__title {
+        font-size: 1.8rem;
+        letter-spacing: -0.1rem;
+        line-height: 1.5rem;
+        margin-block-end: 1.5rem;
+    }
+
+    .schedule-posts__image {
+        width: 20rem;
+        height: auto;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .schedule-posts__description {
+        max-width: 90%;
+        margin-block-start: 1rem;
+        line-height: 1.1rem;
+        letter-spacing: 0.01rem;
+        padding-block-end: 0;
+    }
+
+
+    /* ai content */
+
+    .ai-content {
+        grid-area: ai-content;
+        padding: 1.2rem 0.5rem 1rem 1.3rem;
+    }
+
+    .ai-content__title {
+        font-size: 2.2rem;
+        letter-spacing: -0.15rem;
+        line-height: 2rem;
+        padding-inline-end: 1rem;
+        margin-block-end: 3rem;
+    }
+
+    .ai-content__image {
+        max-width: 100%;
+    }
+
+
+    /* multiple platforms */
+
+    .multiple-platforms {
+        grid-area: multiple-platforms;
+
+        padding: 1rem 0rem 0.8rem 1.3rem;
+        overflow: hidden;
+        justify-content: start;
+        gap: 1.4rem;
+    }
+
+    .multiple-platforms__title {
+        font-size: 2rem;
+        letter-spacing: -0.18rem;
+        line-height: 1.55rem;
+        padding-inline-end: 1rem;
+    }
+
+    .multiple-platforms__image {
+        min-width: 17.5rem;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+    /* consistent schedule */
+
+    .consistent-schedule {
+        grid-area: consistent-schedule;
+
+        padding: 1.2rem 1.3rem 0;
+        overflow: hidden;
+        min-height: 12rem
+    }
+
+    .consistent-schedule__title {
+        font-size: 1.8rem;
+        letter-spacing: -0.12rem;
+        line-height: 1.6rem;
+    }
+
+    .consistent-schedule__image {
+        max-width: 100%;
+    }
+
+
+    /* grow followers */
+
+    .grow-followers {
+        grid-area: grow-followers;
+
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 0.5rem;
+    }
+
+    .grow-followers__title {
+        text-align: start;
+        font-size: 2.2rem;
+        line-height: 2rem;
+    }
+
+    .grow-followers__image {
+        width: 13rem;
+    }
+
+
+    /* audience growth */
+
+    .audience-growth {
+        grid-area: audience-growth;
+        padding: 0.8rem 1rem 1rem 1.3rem;
+    }
+
+    .audience-growth__title {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .audience-growth__percentage {
+        font-size: 3.5rem;
+        letter-spacing: -0.1rem;
+    }
+
+    .audience-growth__image {
+        max-width: 88%;
+        margin-block-start: 2rem;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 1%;
     }
 }
