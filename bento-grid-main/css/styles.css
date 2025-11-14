@@ -296,7 +296,7 @@ body {
 .attribution {
     font-size: 0.7rem;
     font-weight: 500;
-    margin-block-start: 1rem;
+    margin-block: 1rem;
 }
 
 .attribution a {
@@ -306,7 +306,7 @@ body {
 
 .attribution a:hover,
 .attribution a:focus {
-    color: rgb(163, 50, 163);
+    color: rgb(161, 16, 205);
 }
 
 @media (min-width: 576px) {
@@ -383,7 +383,7 @@ body {
             'ai-content multiple-platforms consistent-schedule schedule-post'
             'ai-content audience-growth grow-followers grow-followers';
             align-content: center;
-        margin-block-start: 4rem;
+        margin-block-start: 4.5rem;
     }
 
 
@@ -474,7 +474,8 @@ body {
 
     .ai-content__title {
         font-size: 2.2rem;
-        letter-spacing: -0.15rem;
+        font-weight: 500;
+        letter-spacing: -0.1rem;
         line-height: 2rem;
         padding-inline-end: 1rem;
         margin-block-end: 3rem;
@@ -576,7 +577,6 @@ body {
     }
 
     .attribution {
-        position: absolute;
-        bottom: 1%;
+        margin-block-end: 0;
     }
 }
