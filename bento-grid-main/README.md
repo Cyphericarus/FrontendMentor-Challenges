@@ -99,6 +99,8 @@ The focus was on **semantic HTML**, **modern CSS practices**, and **accessibilit
 * **PerfectPixel by WellDoneCode**: A chrome extension used to design pixel perfect webpages.
 * **TPGI-Colour Contrast Analyser**: A desktop/mac software used to analyze color contrasts, get color values(hsl, hex, rgb) from design images or websites.
 
+---
+
 ## 🙌 Attribution
 
 This project is part of a challenge by [**Frontend Mentor**](https://www.frontendmentor.io).  
