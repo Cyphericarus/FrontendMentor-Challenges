@@ -497,8 +497,8 @@ body {
     }
 
     .multiple-platforms__title {
-        font-size: 2rem;
-        letter-spacing: -0.18rem;
+        font-size: 1.8rem;
+        letter-spacing: -0.1rem;
         line-height: 1.55rem;
         padding-inline-end: 1rem;
     }
