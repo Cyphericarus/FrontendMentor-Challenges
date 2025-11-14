@@ -307,6 +307,7 @@ body {
 .attribution a:hover,
 .attribution a:focus {
     color: rgb(161, 16, 205);
+    cursor: pointer;
 }
 
 @media (min-width: 576px) {
@@ -499,9 +500,8 @@ body {
 
     .multiple-platforms__title {
         font-size: 1.8rem;
-        letter-spacing: -0.1rem;
         line-height: 1.55rem;
-        padding-inline-end: 1rem;
+        padding-inline-end: 1.5rem;
     }
 
     .multiple-platforms__image {
@@ -523,7 +523,7 @@ body {
 
     .consistent-schedule__title {
         font-size: 1.8rem;
-        letter-spacing: -0.12rem;
+        letter-spacing: -0.1rem;
         line-height: 1.6rem;
     }
 
@@ -574,6 +574,13 @@ body {
     .audience-growth__image {
         max-width: 88%;
         margin-block-start: 2rem;
+    }
+
+    .create-post__title,
+    .multiple-platforms__title,
+    .schedule-posts__title,
+    .consistent-schedule__title {
+        font-weight: 500;
     }
 
     .attribution {
