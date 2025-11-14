@@ -23,7 +23,7 @@ It displays a simple page component of Social Media Management Features in a gri
 
 ## 🔎 Overview
 
-**✅ Live Demo:** [Link](https://fylo-data-storage-main-comp.netlify.app/)
+**✅ Live Demo:** [Link](https://bento-grid-main-component.netlify.app/)
 
 The goal of this project was to build a **clean, responsive component page** that adapts well to both desktop, tablet and mobile devices.
 
@@ -41,7 +41,7 @@ The focus was on **semantic HTML**, **modern CSS practices**, and **accessibilit
 * Consistent spacing and typography.
 
 
-### Tablet and Ipad View
+### Tablet or IPad View
 
 ![Tablet-view](https://github.com/user-attachments/assets/7c61c03b-ba0e-439e-bda2-eea1b041a8e3)  
 
@@ -67,7 +67,7 @@ The focus was on **semantic HTML**, **modern CSS practices**, and **accessibilit
 
 ## ✨ Features
 
-* **Main Component**: Implemented the cards with headings, images and their description.
+* **Main Component**: Implemented the cards with headings, images and their descriptions.
 * **Responsive Design**: Works seamlessly on desktop, tablet and mobile(small & large).  
 * **Modern CSS Practices**: Built with CSS variables, a comibination of grid& flex-box, hover effects and media queries.  
 * **Accessible HTML Structure**: Uses semantics like `main`, `footer`, aria accessbility properties and descriptive alt texts for images.  
@@ -92,6 +92,11 @@ The focus was on **semantic HTML**, **modern CSS practices**, and **accessibilit
 * **Typography**: Adjustiing the sizes, weights, letter-spacing, line-heights of the font is time consuming.
 
 ---
+
+## 🛠️ Tools Used
+
+* **PerfectPixel by WellDoneCode**: A chrome extension used to design pixel perfect webpages.
+* **TPGI-Colour Contrast Analyser**: A desktop/mac software used to analyze color contrasts, get color values(hsl, hex, rgb) from design images or websites.
 
 ## 🙌 Attribution
 
