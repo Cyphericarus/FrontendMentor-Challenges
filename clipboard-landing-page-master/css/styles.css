@@ -1,0 +1,116 @@
+/*  =================
+    FONTS
+    ================= */
+
+/* Bai Jamjuree - normal */
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../assets/font/bai-jamjuree-v13-latin/bai-jamjuree-v13-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bai Jamjuree - semi bold */
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../assets/font/bai-jamjuree-v13-latin/bai-jamjuree-v13-latin-600.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*  =================
+    VARIABLES
+    ================= */
+
+:root {
+    --green-500: hsl(171, 66%, 44%);
+    --blue-100: hsl(233, 100%, 69%);
+    --gray-700: hsl(210, 10%, 33%);
+    --gray-500: hsl(201, 11%, 66%);
+    --white: white;
+}
+
+
+/*  =================
+    BASE
+    ================= */
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--gray-500);
+
+    background-image: url('../assets/images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/*  =================
+    ELEMENTS & STYLING
+    ================= */
+
+/* header */
+header {
+    margin-block: 7.2rem 3.2rem;
+}
+
+header .clipboard-logo {
+    width: 7rem;
+    margin: 0 auto;
+}
+
+/* hero */
+.hero {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--gray-700);
+}
+
+.hero__title {
+    font-size: 2.46rem;
+}
+
+.hero__description {
+    font-size: 1.125rem;
+    margin-block: 1.1rem;
+    padding-inline: 20rem;
+    line-height: 1.6rem;
+}
+
+.downloads {
+    margin-block: 3.5rem 5rem;
+}
+
+.downloads__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.downloads__list a {
+    border-radius: 3rem;
+    padding: 0.9rem 2rem;
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: 0.02rem;
+}
+
+.downloads__ios {
+    background-color: var(--green-500);
+}
+
+.downloads__mac {
+    background-color: var(--blue-100);
+}
