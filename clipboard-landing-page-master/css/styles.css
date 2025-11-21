@@ -26,11 +26,21 @@
     ================= */
 
 :root {
+    /* colors */
     --green-500: hsl(171, 66%, 44%);
     --blue-100: hsl(233, 100%, 69%);
     --gray-700: hsl(210, 10%, 33%);
     --gray-500: hsl(201, 11%, 66%);
     --white: white;
+
+    /* sizes */
+    --h2-font-size: 2rem;
+    --h2-letter-spacing: -0.03rem;
+
+    --description-padding-inline: 20rem;
+    --description-line-height: 1.6rem;
+    --description-margin-block: 1.1rem;
+
 }
 
 
@@ -45,6 +55,7 @@ html {
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     color: var(--gray-500);
+    text-align: center;
 
     background-image: url('../assets/images/bg-header-desktop.png');
     background-repeat: no-repeat;
@@ -67,9 +78,6 @@ header .clipboard-logo {
 }
 
 /* hero */
-.hero {
-    text-align: center;
-}
 
 h1,
 h2,
@@ -83,9 +91,9 @@ h3 {
 
 .hero__description {
     font-size: 1.125rem;
-    margin-block: 1.1rem;
-    padding-inline: 20rem;
-    line-height: 1.6rem;
+    margin-block: var(--description-margin-block);
+    padding-inline: var(--description-padding-inline);
+    line-height: var(--description-line-height);
 }
 
 .downloads {
@@ -114,3 +122,60 @@ h3 {
 .downloads__mac {
     background-color: var(--blue-100);
 }
+
+
+/* snippets */
+
+.snippets {
+    padding-block: 1rem;
+}
+
+.snippets__title {
+    margin-block-start: 3.5rem;
+    font-size: var(--h2-font-size);
+    letter-spacing: var(--h2-letter-spacing);
+}
+
+.snippets__description {
+    margin-block: var(--description-margin-block);
+    padding-inline: var(--description-padding-inline);
+    line-height: var(--description-line-height);
+}
+
+.snippets__features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: start;
+    margin-block-start: 3.5rem;
+    padding-block: 1rem;
+}
+
+.snippets__features-img img {
+    overflow: hidden;
+    margin-inline-start: -2rem;
+    width: 105%;
+}
+
+.snippets__feature-list {
+    padding: 3.8rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.snippets__feature-item {
+    display: inherit;
+    flex-direction: inherit;
+    gap: 0.5rem;
+}
+
+.snippets__feature-title {
+    font-size: 1.3rem;
+}
+
+.snippets__feature-description {
+    font-size: 0.9rem;
+    padding-inline-end: 9.2rem;
+    line-height: var(--description-line-height);
+}
+
