@@ -292,6 +292,7 @@ footer {
 .navbar {
     padding-inline: 2rem;
     text-align: start;
+    font-weight: 600;
 }
 
 .navbar__list {
@@ -308,6 +309,10 @@ footer {
 }
 
 .navbar__list-item a {
+    color: var(--gray-500);
+}
+
+.navbar__list-item a:hover {
     color: var(--gray-700);
     cursor: pointer;
 }
@@ -326,6 +331,11 @@ footer {
     gap: 1.4rem;
     justify-content: center;
     align-items: center;
+}
+
+.social-links__list-item a:hover {
+    background-color: var(--gray-700);
+    cursor: pointer;
 }
 
 
