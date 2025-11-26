@@ -122,7 +122,8 @@ h3 {
         0 0.3rem 0.9rem 0.4rem hsl(173, 65%, 86%);
 }
 
-.downloads__ios:hover {
+.downloads__ios:hover,
+.downloads__ios:focus {
     background-color: hsl(171, 52%, 58%);
 }
 
@@ -132,7 +133,8 @@ h3 {
         0 0.3rem 0.9rem 0.4rem hsl(233, 65%, 86%);
 }
 
-.downloads__mac:hover {
+.downloads__mac:hover,
+.downloads__mac:focus {
     background-color: hsl(233, 100%, 76%);
 }
 
@@ -185,8 +187,8 @@ h3 {
 }
 
 .snippets__feature-item {
-    display: inherit;
-    flex-direction: inherit;
+    display: flex;
+    flex-direction: column;
     gap: 0.5rem;
 }
 
@@ -324,7 +326,8 @@ footer {
     color: var(--gray-500);
 }
 
-.navbar__list-item a:hover {
+.navbar__list-item a:hover,
+.navbar__list-item a:focus {
     color: var(--green-500);
     cursor: pointer;
 }
@@ -345,7 +348,8 @@ footer {
     align-items: center;
 }
 
-.social-links__list-item a:hover {
+.social-links__list-item a:hover,
+.social-links__list-item a:focus {
     cursor: pointer;
     filter: brightness(0) saturate(100%) invert(63%) sepia(18%) saturate(1574%) hue-rotate(122deg) brightness(94%) contrast(89%);
 }
@@ -360,6 +364,91 @@ footer {
     color: var(--gray-700);
 }
 
-.attribution a:hover {
+.attribution a:hover,
+.attribution a:focus {
     color: var(--green-500);
+}
+
+
+/* ===================
+   FOR 1024PX MAX SCREENS
+   =================== */
+
+@media (max-width: 1024px) {
+
+    /* variables */
+    :root {
+        --description-padding-inline: 10rem;
+    }
+
+    /* snippets */
+    .snippets__features {
+        grid-template-columns: auto;
+        margin-block-start: 2rem;
+    }
+
+    .snippets__features-img img {
+        margin-inline-start: 0;
+        width: 100%;
+        padding-inline: 5rem;
+    }
+
+    .snippets__feature-list {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .snippets__feature-description {
+        text-align: center;
+        padding-inline: 1rem;
+    }
+
+    /* workflow */
+    .workflow__feature-cards {
+        padding: 2rem 5rem;
+    }
+
+    /* brand logos */
+    .brand-logos {
+        padding-inline: 5rem;
+    }
+
+    .brand-logos ul {
+        flex-wrap: wrap;
+        row-gap: 3rem;
+        column-gap: 2rem;
+    }
+
+    /* footer */
+    .navbar__list {
+        row-gap: 0.5rem;
+        column-gap: 4.5rem;
+    }
+}
+
+
+/* ===================
+   FOR 680PX MAX SCREENS
+   =================== */
+
+@media (max-width: 680px) {
+    body {
+        background-image: url('../assets/images/bg-header-mobile.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    
+
+    .navbar__list {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        row-gap: 1rem;
+        column-gap: 4.2rem;
+        max-height: 100%;
+        height: 100%;
+    }
 }
