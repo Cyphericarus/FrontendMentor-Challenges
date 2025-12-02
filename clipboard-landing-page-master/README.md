@@ -24,7 +24,7 @@ It displays a landing page of sample website based on different screen widths.
 
 ## 🔎 Overview
 
-**✅ Live Demo:** [Link](https://bento-grid-main-component.netlify.app/)
+**✅ Live Demo:** [Link](https://clipboard-single-landing-page.netlify.app/)
 
 The goal of this project was to build a **clean, responsive component page** that adapts well to both desktop, tablet and mobile devices.
 
