@@ -434,6 +434,7 @@ footer {
    =================== */
 
 @media (max-width: 680px) {
+
     body {
         background-image: url('../assets/images/bg-header-mobile.png');
     }
@@ -444,7 +445,13 @@ footer {
 
     :root {
         /* sizes */
-        --description-padding-inline: 0;
+
+        --h2-font-size: 1.6rem;
+
+        --description-padding-inline: 1.8rem;
+        --description-margin-block: 0.4rem;
+        --description-line-height: 1.5rem;
+
     }
 
     /*  ===================
@@ -454,31 +461,31 @@ footer {
     /* header */
     header {
         margin-block: 6.8rem 3.2rem;
-        background-color: red;
     }
 
 
     /* hero */
 
     .hero__title {
-        font-size: 2.46rem;
+        font-size: 1.75rem;
+        padding: 0.5rem 1rem;
     }
 
     .hero__description {
-        padding-inline: var(--description-padding-inline);
+        font-size: 0.9rem;
     }
 
     .downloads {
-        margin-block: 3.5rem 5rem;
+        margin-block: 3.25rem 5rem;
     }
 
     .downloads__list {
         flex-direction: column;
-        gap: 1rem;
+        gap: 3.15rem;
     }
 
-    .downloads__list li{
-        margin-top: 2rem;
+    .downloads__list a {
+        padding: 0.8rem 4.3rem;
     }
 
     .snippets__title,
@@ -488,7 +495,8 @@ footer {
         margin-block-start: var(--h2-margin-block-start);
         font-size: var(--h2-font-size);
         letter-spacing: var(--h2-letter-spacing);
-
+        padding-inline:  1rem;
+        background-color: red;
     }
 
     .snippets__description,
@@ -506,7 +514,6 @@ footer {
 
     .snippets {
         padding-block: 1rem;
-        background-color: red;
 
     }
 
